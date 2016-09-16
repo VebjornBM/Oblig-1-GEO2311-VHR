@@ -1,7 +1,12 @@
 #googleMaps {
-  width:600px;
-  height:500px;
+  width:40%;
+  height:35%;
   float:left;
+}
+img {
+  float:left;
+  width:40%;
+  height:35%;
 }
 /*#overskift {
 }*/
