@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <title>1. Webside med Google Maps-kart og WMS-kart</title>
-  <meta charset="utf-8"> <!-- utf-8 for å få "ÆØÅ" -->
   <head>
+    <title>1. Webside med Google Maps-kart og WMS-kart</title>
+    <meta charset="utf-8"> <!-- utf-8 for å få "ÆØÅ" -->
     <link type="text/css" rel="stylesheet" href="maps+wms_css.css"/>
+    <meta name="author" content="Henrik Lande Nisja, Odd Robin Lein, Vebjørn Borgen Myrekrok">
+    <meta name="description" content="Google maps javascript api og wms-kart av deler av kristiansund havn, samt noe smått om kristiansund">
   </head>
   <body>
-    <h1> Google Maps javascript API kart <h1>
+    <h1>Webside med Google Maps og WMS-kart</h>
     <div id=googleMaps>
       <script>
-    var googleMaps;
-    function initMap() {
+      var googleMaps;
+      function initMap() {
       googleMaps = new google.maps.Map(document.getElementById('googleMaps'), {
         center: {lat: 63.068, lng: 7.827},
         zoom: 11
       });
     }
-      </script>
+        </script>
     <!-- Async laster nettsiden mens kartet lastes-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgiLOEQh-n-g09mo63WRPtTuZx-0HK3Kw&callback=initMap"
-    async defer></script> <!-- google maps javascript api: AIzaSyBgiLOEQh-n-g09mo63WRPtTuZx-0HK3Kw -->
-  </div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgiLOEQh-n-g09mo63WRPtTuZx-0HK3Kw&callback=initMap"
+      async defer></script> <!-- google maps javascript api: AIzaSyBgiLOEQh-n-g09mo63WRPtTuZx-0HK3Kw -->
+    </div>
   <div id=wmsKart>
     <img src="http://openwms.statkart.no/skwms1/wms.topo2?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:32632&BBOX=435803.824699,6998317.469066,436229.151857,6998795.765147&WIDTH=400&HEIGHT=350&LAYERS=topo2_WMS&FORMAT=image/png"/>
   </div>
