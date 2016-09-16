@@ -1,5 +1,4 @@
 #googleMaps {
-  position: relative;
   width:400px;
   height:350px;
   float:left;
@@ -7,7 +6,6 @@
   margin-top: 5px;
 }
 #wmsKart {
-  position: relative;
   float:left;
   margin-left: 5px;
   margin-bottom:5px;
