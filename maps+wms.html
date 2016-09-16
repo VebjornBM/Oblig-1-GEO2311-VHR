@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html>
+  <title>1. Webside med Google Maps-kart og WMS-kart</title>
+  <meta charset="utf-8">
+<!-- google maps javascript api: AIzaSyBgiLOEQh-n-g09mo63WRPtTuZx-0HK3Kw -->
   <head>
-
+    <!-- <link type="text/css" rel="stylesheet" href="min webside css.css"/> -->
   </head>
   <body>
-    WE LOVE GAYPORN
+    <h1> Google Maps javascript API kart <h1>
+      <div id=googleMaps style="width:600px;height:500px"></div>
+      <script>
+    var googleMaps;
+    function initMap() {
+      googleMpas = new google.maps.Map(document.getElementById('googleMaps'), {
+        center: {lat: 63.068, lng: 7.827},
+        zoom: 11
+      });
+    }
+  </script>
+    <!-- Async laster nettsiden mens kartet lastes-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgiLOEQh-n-g09mo63WRPtTuZx-0HK3Kw&callback=initMap"
+    async defer></script>
   </body>
 </html>

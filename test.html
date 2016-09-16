@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="test.css"/>
+    <!-- Linker html-filen til test.css slik at vi får stylet nettsiden -->
+
+  </head>
+  <body>
+    hei
+    <div>
+    <div id="maps_api">
+      <script>
+      function myMap(){
+        var mapCanvas = document.getElementById("maps_api");
+        var mapOptions = {
+          center: new google.maps.LatLng(60, 20),
+          zoom: 10
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      </script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+      <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt7lmjtU7iv3FHUM_HMP_pvjNbcwOMO28"> -->
+      <!--</script>-->
+    </div>
+    <div id="bilde">
+      <img src="https://sammensatt-sandvika.wikispaces.com/file/view/bj%C3%B8rn.jpg/526550448/380x288/bj%C3%B8rn.jpg"/>
+    </div>
+  </div>
+  </body>
+</html>
