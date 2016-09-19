@@ -4,20 +4,42 @@
   float:left;
   margin-bottom:5px;
   margin-top: 5px;
+  padding: 5px;
+  align: center;
 }
 #wmsKart {
   float:left;
   margin-left: 5px;
   margin-bottom:5px;
   margin-top: 5px;
+  padding: 5px;
 }
-
-h1{
+#overskift {
   font-size: 16px;
-  margin-top:5px;
-  margin-right: 5px;
+  margin:5px;
+  text-align: center;
+  padding: 2px;
+  align: center;
+}
+#fakta{
+  font-size: 16px;
+  margin: 5px;
   float:left;
+  padding:2px;
+  width: 400px;
 }
 p{
   font size: 10;
 }
+table, tr, th, th {
+  border: 0.5px solid black;
+  width: 50%;
+  height: 50px;
+  text-align: center;
+  border-collapse: collapse;
+  }
+  #tabell{
+    margin: 5px;
+    float:left;
+    width: 400px;
+  }
