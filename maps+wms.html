@@ -8,14 +8,14 @@
     <meta name="description" content="Google maps javascript api og wms-kart av deler av kristiansund havn, samt noe smått om kristiansund">
   </head>
   <body>
-    <h1>Webside med Google Maps og WMS-kart</h>
+    <div id=overskrift><h1>Webside med Google Maps og WMS-kart</h></div>
     <div id=googleMaps>
       <script>
       var googleMaps;
       function initMap() {
       googleMaps = new google.maps.Map(document.getElementById('googleMaps'), {
         center: {lat: 63.068, lng: 7.827},
-        zoom: 11
+        zoom: 10
       });
     }
         </script>
@@ -23,12 +23,35 @@
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgiLOEQh-n-g09mo63WRPtTuZx-0HK3Kw&callback=initMap"
       async defer></script> <!-- google maps javascript api: AIzaSyBgiLOEQh-n-g09mo63WRPtTuZx-0HK3Kw -->
     </div>
-  <div id=wmsKart>
+    <div id=wmsKart>
     <img src="http://openwms.statkart.no/skwms1/wms.topo2?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:32632&BBOX=435803.824699,6998317.469066,436229.151857,6998795.765147&WIDTH=400&HEIGHT=350&LAYERS=topo2_WMS&FORMAT=image/png"/>
-  </div>
-  <div id=fakta>
-    <h2> Kristiansund Kommune </h2>
-    <p> Her kommer det faktatekst </p>
-  </div>
+    </div>
+    <div id=fakta>
+      <h2> Kristiansund Kommune </h2>
+      <p>Kristiansund kommune består av 5 forskjellige øyer. 4 av øyene er koblet sammen med bro og den siste må man benytte seg av båt for å nå. Øyene heter Kirklandet, Innlandet, Nordlandet, Frei og Grip.
+      Flyplassen i Kristiansund kommune heter Kvernberget lufthavn. Kjente personer fra Kristiansund er blandt andre Frode Alnæs og Ole Gunnar Solskjær.</p>
+    </div>
+    <div id=tabell>
+      <table>
+        <tr>
+				  <th colspan="2">Kristiansund kommune</th>
+			  </tr>
+        <tr>
+          <th>Fylke</th>
+          <th>Møre og Romsdal</th>
+        </tr>
+        <tr>
+          <th>Areal</th>
+          <th>87 Kvadratkilometer</th>
+        </tr>
+        <tr>
+          <th>Folketall</th>
+          <th>24 526</th>
+        </tr>
+        <tr>
+          <th>Kommunenummer</th>
+          <th>1505</th>
+        </tr>
+    </div>
   </body>
 </html>
