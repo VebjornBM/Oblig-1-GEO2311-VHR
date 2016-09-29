@@ -11,14 +11,29 @@
     <div id=overskrift><h1>Webside med Google Maps og WMS-kart</h></div>
     <div id=googleMaps>
       <script>
+      //{lat: 63.068, lng: 7.827
       var googleMaps;
       function initMap() {
       googleMaps = new google.maps.Map(document.getElementById('googleMaps'), {
-        center: {lat: 63.068, lng: 7.827},
-        zoom: 10
+        center: {lat: 64.8, lng: 12},
+        zoom: 4
+      });
+      var rectangle = new google.maps.Rectangle({
+        strokeColor: '#FF0000',
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: '#FF0000',
+        fillOpacity: 0.1,
+        map: googleMaps,
+        bounds: {
+          north: 63.2,
+          south: 63,
+          east: 7.93,
+          west: 7.6
+        }
       });
     }
-        </script>
+      </script>
     <!-- Async laster nettsiden mens kartet lastes-->
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgiLOEQh-n-g09mo63WRPtTuZx-0HK3Kw&callback=initMap"
       async defer></script> <!-- google maps javascript api: AIzaSyBgiLOEQh-n-g09mo63WRPtTuZx-0HK3Kw -->
