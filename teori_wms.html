@@ -43,39 +43,38 @@ th, td {
       <th>Eksempel</th>
     </tr>
 <tr>
-  <th>SERVICE=(Service type)</th>
-  <th>Type service</th>
-  <th>&SERVICE=WMS</th>
+  <td>SERVICE=(Service type)</td>
+  <td>Type service</td>
+  <td>&SERVICE=WMS</td>
 </tr>
 <tr>
-  <th>REQUEST=(request name)</th>
-  <th>GetMap/GetCapabilities/
-GetFeatureInfo</th>
-<th>GetMap/GetCapabilities/
-GetFeatureInfo</th>
+  <td>REQUEST=(request name)</td>
+  <td>GetMap/GetCapabilities/
+GetFeatureInfo</td>
+<td>GetMap/GetCapabilities/
+GetFeatureInfo</td>
 </tr>
 <tr>
-  <td>VERSION=(Request version) </td>
-  <td>WMS-versjon</td>
-  <td>&VERSION=1.1.1</td>
+    <td><font color="red">VERSION=(Request version)</font></td>
+      <td><font color="red">WMS-versjon</font></td>
+      <td><font color="red">&VERSION=1.1.1</font></td>
 </tr>
 <tr>
-  <td>FORMAT=(MIME_type)</td>
-  <td>Format på resultatkart </td>
-  <td>&FORMAT=text/xml</td>
+  <td><font color="red">FORMAT=(MIME_type)</font></td>
+  <td><font color="red">Format på resultatkart</font></td>
+  <td><font color="red">&FORMAT=text/xml</font></td>
   </tr>
   <tr>
-<td>UPDATESEQUENCE=
-(string)</td>
-<td>Heltall eller tekststreng
-</td>
+      <td><font color="red">UPDATESEQUENCE=
+      (string)</font></td>
+  <td><font color="red">Heltall eller tekststreng</font></td>
 <td></td>
   </tr>
-    <td colspan="3">Det som er uthevet er obligatrisk, resten er valgfritt.</td>
+    <td colspan="3">Det som rødt er valgfritt,resten er obligatorisk.</td>
   </tr>
 </table>
 <ul>
-  <li><p><b>Service:</b> Er generell serviceinformasjon, kontaktinformasjon, 
+  <li><p><b>Service:</b> Er generell serviceinformasjon, kontaktinformasjon,
     tittel, navn, beskrivelser og restriksjoner.</li></p>
     <li><p><b>Capabiltiy:</b> Viser hva slags forespørsler som er tilgjengelig og
       tilhørende responsformater. Layer elemntet er med på denne.
@@ -91,3 +90,48 @@ GetFeatureInfo</th>
       klientapplikasjon.</p></p>
       </li>
 </ul>
+
+ <h3> GetMap </h3>
+
+ <table style="width:100%">
+
+   <tr>
+       <th>Parametre</th>
+       <th>Beskrivelse</th>
+       <th>Eksempel</th>
+     </tr>
+
+   <tr>
+     <td>VERSION=
+< Request version></td>
+<td>WMS-versjon </td>
+<td>&VERSION=1.3.0</td>
+   </tr>
+
+   <tr>
+    <td>REQUEST=(Request name)</td>
+    <td>GetMap -forespørsel </td>
+    <td>&REQUEST=GetMap</td>
+   </tr>
+
+   <tr>
+     <td>LAYERS=(layer_list)</td>
+     <td>Kommaseparert liste over karttema</td>
+     <td>&LAYERS=FjellbronnVannforsy
+ning,FjellKilde</td>
+   </tr>
+
+   <tr>
+    <td>STYLES=(style_list)</td>
+    <td>Hvis tilgjengelig: Liste over stiler som
+korresponderer med karttemalisten
+(layers). ("STYLES=" gir default style)
+</td>
+    <td>&STYLES=1</td>
+   </tr>
+
+   <tr>
+     <td></td>
+     <td></td>
+     <td></td>
+   </tr>
