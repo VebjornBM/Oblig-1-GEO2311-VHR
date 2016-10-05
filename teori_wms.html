@@ -3,6 +3,16 @@
   <meta charset="utf-8">
   <head>
     <title> Dette er teori bak WMS og hvordan det fungerer</title>
+    <style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+</style>
   </head>
   <body>
     <h1> WMS teori</h1>
@@ -17,7 +27,7 @@
  </p>
 
  <p> Vi har i hovedsak 3 operasjoner som beskrives igjennom WMS. </p>
- <h3> GetCapalatives </h3>
+ <h3> GetCapabilities </h3>
  <p> Gir oss metadata på informasjon på hva karttjenesten kan tilby.
    <ul>Som foreksempel:</ul>
     <li>Tilgjengelig operasjoner</li>
@@ -26,6 +36,40 @@
     <li>Dekningesområder</li>
     <li>Spørrerestriksjoner</li>
 
-    
-  </body>
-  </html>
+    <table style="width:100%">
+    <tr>
+      <th>Parametre</th>
+      <th>Beskrivelse</th>
+      <th>Eksempel</th>
+    </tr>
+<tr>
+  <th>SERVICE=(Service type)</th>
+  <th>Type service</th>
+  <th>&SERVICE=WMS</th>
+</tr>
+<tr>
+  <th>REQUEST=(request name)</th>
+  <th>GetMap/GetCapabilities/
+GetFeatureInfo</th>
+<th>GetMap/GetCapabilities/
+GetFeatureInfo</th>
+</tr>
+<tr>
+  <td>VERSION=(Request version) </td>
+  <td>WMS-versjon</td>
+  <td>&VERSION=1.1.1</td>
+</tr>
+<tr>
+  <td>FORMAT=(MIME_type)</td>
+  <td>Format på resultatkart </td>
+  <td>&FORMAT=text/xml</td>
+  </tr>
+  <tr>
+<td>UPDATESEQUENCE=
+(string)</td>
+<td>Heltall eller tekststreng
+</td>
+<td></td>
+  </tr>
+    <td colspan="3">Det som er uthevet er obligatrisk, resten er valgfritt.</td>
+  </tr>
