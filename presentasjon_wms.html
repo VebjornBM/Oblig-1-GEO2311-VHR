@@ -1,9 +1,92 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+    <title>Presentasjon av topografisk norgeskart 2</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="presentasjon_wms_css.css"/>
   </head>
   <body>
-    hei
+    <h1>Topografisk norgeskart 2</h1>
+    <table>
+      <tr>
+        <th>Navn</th>
+        <th>Projeksjoner</th>
+        <th>Formater</th>
+        <th>Getfeatureinfo</th>
+        <th>Beskrivelse</th>
+      </tr>
+      <tr>
+        <td>Høydelag</td>
+        <td>WGS84 UTM sone 33</td>
+        <td>N5000, N2000, N1000, N500, N250</td>
+        <td></td>
+        <td>Fargekoder for forskjellige høyder</td>
+      </tr>
+      <tr>
+        <td>Vannflate</td>
+        <td>WGS84 UTM sone 33. ETRS89 i FKB vannflate</td>
+        <td>N5000, N2000, N1000, N500, N250, N50, FKB vannflate</td>
+        <td></td>
+        <td>Legger til vannflater til kartet. Elv, innsjø og hav</td>
+      </tr>
+      <tr>
+        <td>Elver</td>
+        <td>WGS84 UTM sone 33. ETRS89 i FKB elver</td>
+        <td>N5000, N2000, N1000, N500, N250, FKB elver</td>
+        <td></td>
+        <td>Legger til store bekker, elver og store elver i kartet</td>
+      </tr>
+      <tr>
+        <td>Høydekurver</td>
+        <td>WGS84 UTM sone 33. ETRS89 i FKB høydekurver 5m og 1m</td>
+        <td>N2000, N1000, N500, N250, N50. FKB høydekurver 5m, FKB høydekurver 1m</td>
+        <td></td>
+        <td>Legger til høydekurver med forskjellige intervaller til kartet</td>
+      </tr>
+      <tr>
+        <td>Administrative grenser</td>
+        <td>WGS84 UTM sone 33</td>
+        <td>N5000, N2000, N1000, N500, N250, N50</td>
+        <td></td>
+        <td>Viser kommunegrenser, fylkesgrenser, riksgrense, grunnlinje, territorialgrense og avtalt avgrensingsline i kartet </td>
+      </tr>
+      <tr>
+        <td>Skytefeltgrense</td>
+        <td>WGS84 UTM sone 33</td>
+        <td>N50</td>
+        <td></td>
+        <td>Viser skytefelt i kartet</td>
+      </tr>
+      <tr>
+        <td>Verneområdegrense</td>
+        <td>WGS84 UTM sone 33</td>
+        <td>N5000, N2000, N1000, N500, N250, N50</td>
+        <td></td>
+        <td>Legger til vernet natur til kartet</td>
+      </tr>
+      <tr>
+        <td>Veger</td>
+        <td>WGS84 UTM sone 33</td>
+        <td>N5000 Bilveg, N2000 Bilveg, N1000 Bilveg, N500 Bilveg, N250 Bilveg, N50 Bilveg, N500 Annenveg, N250 Annenveg, N50 Annenveg</td>
+        <td></td>
+        <td>Legger til veier til kartet. For eksempel fylkesvei, sti, traktorvei, bru, tunnel osv.</td>
+      </tr>
+      <tr>
+        <td>Jernbane</td>
+        <td>WGS84 UTM sone 33</td>
+        <td>N5000, N2000, N1000, N500, N250, N50</td>
+        <td></td>
+        <td>Legger til jernbanelinjer med bruer og tunneler til kartet</td>
+      </tr>
+      <tr>
+        <td>Ferger</td>
+        <td>WGS84 UTM sone 33</td>
+        <td>N5000 Bilferge, N2000 Bilferge, N1000 Bilfergre, N500 Bilferge, N250 bilferge, N50 Bilferge,
+          N5000 Annen båtrute, N2000 Annen båtrure,
+          N1000 passasjerferge, N500 passasjerferge, N250 passasjerferge, N50 passasjerferge</td>
+        <td></td>
+        <td>Legger til fergesamband. både passasjerferger og bilferger til kartet</td>
+      </tr>
+    </table>
   </body>
 </html>
