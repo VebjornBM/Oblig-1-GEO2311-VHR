@@ -1,5 +1,8 @@
-body {
-  
+html, body {
+    background: linear-gradient(to bottom right, white, rgba(230, 230, 230, 1));
+    height: 100%;
+    margin:0px;
+    width:100%;
 }
 #googleMaps {
   width:400px;
@@ -8,6 +11,7 @@ body {
   margin-bottom:5px;
   margin-top: 5px;
   padding: 5px;
+
 }
 #wmsKart {
   float:left;
