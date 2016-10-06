@@ -7,17 +7,19 @@
     <meta name="author" content="Henrik Lande Nisja, Odd Robin Lein, Vebjørn Borgen Myrekrok">
   </head>
   <body>
-  <!--  <div id=wms>
-    <img src="http://wms.geonorge.no/skwms1/wms.topo2?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:32633&BBOX=257869.000258,6648383.296856,269369.088553,6659202.780195&WIDTH=400&HEIGHT=350&LAYERS=N250Hoydekurver&FORMAT=image/png"/>
-  </div>
-    <div id=wms2>
-      <img src="http://wms.geonorge.no/skwms1/wms.topo2?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:4258&BBOX=59.90168,10.6697845,60.0051655,10.862732&WIDTH=400&HEIGHT=350&LAYERS=N500Hoydekurver&FORMAT=image/png"/>
-    </div>-->
-    <div id=wms3>
-    <img src="http://wms.geonorge.no/skwms1/wms.topo2?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:32633&BBOX=103815.760472,6624404.252509,105710.643749,6625459.260230&WIDTH=400&HEIGHT=350&LAYERS=N50Hoydekurver&FORMAT=image/png"/>
-  </div>
-    <div id=wms4>
-      <img src="http://wms.geonorge.no/skwms1/wms.topo2?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:4258&BBOX=59.5692014,7.9794646,59.5803938,8.0107928&WIDTH=400&HEIGHT=350&LAYERS=N50Hoydekurver&FORMAT=image/png"/>
+  <div id=div1>
+    <div id=wms1>
+
+      <img src="http://wms.geonorge.no/skwms1/wms.topo2?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:32633&BBOX=103815.760472,6624404.252509,105710.643749,6625459.260230&WIDTH=400&HEIGHT=350&LAYERS=N50Hoydekurver&FORMAT=image/png"/>
+      <!-- Kaller inn kartlaget N50 Høydekurver i epsg:32633 innenfor et geografisk område -->
+      <p>EPSG:32633</p>
     </div>
+    <div>
+
+      <img src="http://wms.geonorge.no/skwms1/wms.topo2?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:4258&BBOX=59.5692014,7.9794646,59.5803938,8.0107928&WIDTH=400&HEIGHT=350&LAYERS=N50Hoydekurver&FORMAT=image/png"/>
+      <!-- Kaller inn kartlaget N50 Høydekurver i epsg:4258 innenfor et geografisk område -->
+      <p>EPSG:4258
+    </div>
+  </div>
   </body>
 </html>

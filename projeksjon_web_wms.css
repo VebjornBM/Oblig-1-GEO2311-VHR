@@ -1,28 +1,13 @@
-#wms {
-  float:left;
-  margin-bottom:5px;
-  margin-top: 5px;
-  padding: 5px;
+body {
+  background: linear-gradient(to bottom right, white, rgba(230, 230, 230, 1));
+};
+#div1  {
+  width: 100%;
+  overflow: hidden;
 }
 
-#wms2 {
-  float:left;
-  margin-bottom:5px;
-  margin-top: 5px;
-  padding: 5px;
-  margin-left: 5px;
-}
-#wms3 {
-  float:left;
-  margin-bottom:5px;
-  margin-top: 5px;
-  padding: 5px;
-}
-
-#wms4 {
-  float:left;
-  margin-bottom:5px;
-  margin-top: 5px;
-  padding: 5px;
-  margin-left: 5px;
+#wms1  {
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
 }
