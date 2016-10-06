@@ -39,9 +39,23 @@ li a {
 
 }
 
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+@keyframes example2 {
+    from {text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5), -1px -2px 7px rgba(0, 0, 0, 0.5);
+    color:black;}
+    to {color: rgba(150, 0, 0, 0.7);
+    text-shadow: 1px 1px 15px rgba(130, 0, 0, 0.5), -1px -2px 7px rgba(130, 0, 0, 0.5);}
+}
+
 li a:hover {
   color: rgba(150, 0, 0, 0.7);
   text-shadow: 1px 1px 15px rgba(130, 0, 0, 0.5), -1px -2px 7px rgba(130, 0, 0, 0.5);
+  animation-name: example2;
+  animation-duration: 0.3s;
 }
 
 #link1 {
