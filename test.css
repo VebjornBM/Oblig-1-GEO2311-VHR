@@ -39,12 +39,7 @@ li a {
 
 }
 
-@keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
-}
-
-@keyframes example2 {
+@keyframes hover1 {
     from {text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5), -1px -2px 7px rgba(0, 0, 0, 0.5);
     color:black;}
     to {color: rgba(150, 0, 0, 0.7);
@@ -54,11 +49,11 @@ li a {
 li a:hover {
   color: rgba(150, 0, 0, 0.7);
   text-shadow: 1px 1px 15px rgba(130, 0, 0, 0.5), -1px -2px 7px rgba(130, 0, 0, 0.5);
-  animation-name: example2;
-  animation-duration: 0.3s;
+  animation-name: hover1;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in;
 }
 
 #link1 {
   float:right;
-  margin-right: 5px;
 }
