@@ -1,8 +1,8 @@
-body {
+html, body {
   background: linear-gradient(to bottom right, white, rgba(230, 230, 230, 1));
+  margin: 0px;
+  height: 100%;
 };
-
-
 
 #div1  {
   width: 100%;
@@ -11,13 +11,15 @@ body {
 
 #wms1  {
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 15px;
   float: left;
 }
 
 #bilde_wms  {
-  border-style: solid;
+  border-style: groove;
   border-color: black;
-  border-radius: 10.5px;
-  border-width: thin;
+  border-radius: 8px;
+  border-width: 2px;
+  box-shadow: 5px 5px 4px grey;
+
 }
