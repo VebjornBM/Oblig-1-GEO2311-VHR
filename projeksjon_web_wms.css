@@ -7,8 +7,20 @@
 
 #wms2 {
   float:left;
-  border-style: solid;
-  border-color: red;
+  margin-bottom:5px;
+  margin-top: 5px;
+  padding: 5px;
+  margin-left: 5px;
+}
+#wms3 {
+  float:left;
+  margin-bottom:5px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+#wms4 {
+  float:left;
   margin-bottom:5px;
   margin-top: 5px;
   padding: 5px;
