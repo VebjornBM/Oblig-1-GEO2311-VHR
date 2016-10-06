@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--Title er teksten som kommer opp i fane vinduet-->
     <title>1. Webside med Google Maps-kart og WMS-kart</title>
     <meta charset="utf-8"> <!-- utf-8 for å få "ÆØÅ" -->
+    <!--referanse til stylesheet-->
     <link type="text/css" rel="stylesheet" href="maps+wms_css.css"/>
-    <meta name="author" content="Henrik Lande Nisja, Odd Robin Lein, Vebjørn Borgen Myrekrok">
+    <!--Description og content er teksten som kommer opp på søkeresultater i google.-->
     <meta name="description" content="Google maps javascript api og wms-kart av deler av kristiansund havn, samt noe smått om kristiansund">
   </head>
   <body>
@@ -12,15 +14,23 @@
     <div id=googleMaps>
       <script>
       //{lat: 63.068, lng: 7.827
+      //Scripet for å få opp google maps på websiden. der center definerer hvor senter i kartet er når du laster siden, det samme gjelder zoom, men da hvor mye som det er på siden
       var googleMaps;
       function initMap() {
       googleMaps = new google.maps.Map(document.getElementById('googleMaps'), {
         center: {lat: 63, lng: 10},
         zoom: 6
       });
+      // Dette scripet gir deg rektangelet på kartet.
+      //strokeColor er fargen på kanten rundt rektangelet.
+      //strokeOpacity er hvor gjennomsiktig kanten er
+      //strokeWeight er tjukkelse på kanten
+      //fillColor er fargen på fyllet i boksen
+      //fillOpacity er hvor gjennomsiktig fyllet er
+      //bound forteller skriptet hvor boksen skal være
       var rectangle = new google.maps.Rectangle({
         strokeColor: '#FF0000',
-        strokeOpacity: 0.8,
+        strokeOpacity: 0.6,
         strokeWeight: 2,
         fillColor: '#FF0000',
         fillOpacity: 0.1,
@@ -49,6 +59,7 @@
     <div id=tabell>
       <table>
         <tr>
+          <!--colspan sier hvor mange celler raden skal strekke seg over-->
 				  <th colspan="2">Kristiansund kommune</th>
 			  </tr>
         <tr>
