@@ -1,6 +1,9 @@
 body {
   background: linear-gradient(to bottom right, white, rgba(230, 230, 230, 1));
 };
+
+
+
 #div1  {
   width: 100%;
   overflow: hidden;
@@ -10,4 +13,11 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   float: left;
+}
+
+#bilde_wms  {
+  border-style: solid;
+  border-color: black;
+  border-radius: 10.5px;
+  border-width: thin;
 }
