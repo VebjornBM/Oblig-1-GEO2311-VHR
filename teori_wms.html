@@ -131,7 +131,81 @@ korresponderer med karttemalisten
    </tr>
 
    <tr>
-     <td></td>
-     <td></td>
-     <td></td>
+     <td>SRS=(namespace:identfier)</td>
+     <td>Koordinatsystem som gjelder for boxparameteren.
+Klienter og tjenere må
+ikke støtte alle koordinatsystem.</td>
+     <td>&SRS=EPSG:32633</td>
    </tr>
+
+   <tr>
+     <td>BBOX=(bounding box)</td>
+     <td>Utstrekningsrektangel i SRS-enheter.
+Det vil komme feilmelding dersom raten
+mellom height/width ikke
+korresponderer med pikslene i BOX.</td>
+     <td>&BBOX=280581.05308146186,69
+02727.670430477,283107.129745
+33665,6911610.535459495
+</td>
+   </tr>
+
+   <tr>
+    <td>FORMAT=(output_format)</td>
+    <td>Format på resultatkart </td>
+    <td>&FORMAT=image/png</td>
+   </tr>
+
+   <tr>
+    <td>WIDTH=(output_width)</td>
+    <td>Bredde i piksler på resultatkart </td>
+    <td>&WIDTH=1014</td>
+   </tr>
+
+   <tr>
+     <td>HEIGHT=(output_height)</td>
+     <td>Høyde i piksler på resultatkart </td>
+      <td>&HEIGHT=611</td>
+   </tr>
+
+   <tr>
+     <td><font color="red">TRANSPARENT=(boolean)</font></td>
+     <td><font color="red">(defalt = false)</font></td>
+     <td><font color="red">&TRANSPARENT=true
+</font></td>
+   </tr>
+
+   <tr>
+     <td><font color="red">EXEPTIONS=
+(exception_format)</font></td>
+     <td><font color="red">Format på feilmeldinger</font></td>
+     <td><font color="red">&EXEPTIONS=application/vnd.ogc
+.se_inimagel</font></td>
+   </tr>
+
+   <tr>
+     <td><font color="red">BGCOLOR=(color_value)</font></td>
+     <td><font color="red">Hexadesimal RGB fargeverdi
+(default:#FFFFFF)
+</font></td>
+     <td><font color="red">&BGCOLOR=#ffffff</font></td>
+   </tr>
+
+   <tr>
+     <td><font color="red">TIME=(time)</font></td>
+     <td><font color="red">Tidsdimensjon</font></td>
+     <td><font color="red">&TIME=2000-08-03</font></td>
+   </tr>
+
+   <tr>
+     <td><font color="red">ELEVATION=(elevation)</font></td>
+     <td><font color="red">Høydedimensjon </font></td>
+     <td><font color="red">&ELEVATION=1000
+</font></td>
+   </tr>
+
+ </tr>
+   <td colspan="3">Det som rødt er valgfritt,resten er obligatorisk.</td>
+ </tr>
+
+ <h3></h3>
