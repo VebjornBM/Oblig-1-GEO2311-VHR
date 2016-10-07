@@ -5,6 +5,7 @@ h1 {
 h3 {
   text-align: center;
 }
+
 table {
   width: 90%;
   height: 200px;
@@ -13,4 +14,12 @@ table {
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+}
+ul{
+  text-align: center;
+}
+#tabell {
+  margin: auto;
+  width: 20%;
+  padding: 10px;
 }
