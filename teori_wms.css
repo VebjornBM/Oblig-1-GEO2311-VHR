@@ -15,16 +15,15 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
-ul{
-  text-align: center;
-}
+
 #tabell_1 {
   margin: auto;
   width: 20%;
   padding: 10px;
 }
+
 #tabell_2 {
-  margin: auto;
-  width: 10%;
-  padding: 10px;
-}
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }

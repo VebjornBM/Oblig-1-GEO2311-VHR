@@ -17,17 +17,22 @@
     Karbildet som som sendes tilbake fra tjeneren er tilsvarende et kartlag .
     Kartlaget som retuneres er ikke de reelle dataene, men en grafisk representasjon av dataene.
  </p>
+
  <h3>Bruken av WMS</h3>
+
  <p>Det finnes en rekke bruksområder på WMS, Her kommer det et par eksempler på dette.
     Om du har en applikasjon for registrering av brønndata i en database, med WMS integrert.
  Vil WMS gjøre slik at du kan ta en visuell sjekk på om posisjonen du ønsker å
-legge inn på brønnen et fullgodt alternativ.</p>
+legge inn på brønnen et fullgodt alternativ. </p>
 <p>Om man skal bruke PDA, og har WMS med i PDA løsningen. Kan man få en
 enkel og grei funksjonalitet for navigasjon, hvor det hele kan startes fra et
 GPS-koordinat</p>
+
  <p> -  Vi har i hovedsak 3 operasjoner som beskrives igjennom WMS. </p>
  <h3> GetCapabilities </h3>
+
  <p> Gir oss metadata på informasjon på hva karttjenesten kan tilby.
+
 <div id=tabell_1>
    <ul>Eksempler på dette er:</ul>
     <li>Tilgjengelig operasjoner</li>
@@ -74,6 +79,7 @@ GetFeatureInfo</td>
   </tr>
 </table>
 <ul>
+  <div id=tabell_2>
   <li><p><b>Service:</b> Er generell serviceinformasjon, kontaktinformasjon,
     tittel, navn, beskrivelser og restriksjoner.</li></p>
     <li><p><b>Capabiltiy:</b> Viser hva slags forespørsler som er tilgjengelig og
@@ -90,22 +96,22 @@ GetFeatureInfo</td>
       klientapplikasjon.</p></p>
       </li>
 </ul>
-
+</div>
  <h3> GetMap </h3>
 
  <p> GetMap er et kartbilde, eller et kartlag med et eller flere tema. De
     vanligste
 bildeformatene for GetMap er PNG, JPG, GIF og SVG. I den eurpeiske profilen er
  minumumskravet for formatet, PNG</p>.
-
+      <div id=tabell_1>
       <ul>Eksempler på hva som kan oppgis:
-        <div id=tabell_2>
         <li>Karttemaliste</li>
         <li>Koordinatsystem</li>
         <li>Geografiske områder</li>
         <li>Bildeformat.</li>
+        </ul>
       </div>
-      </ul>
+
 
    <p>Kartemaene er avhengig av rekkefølgen i lista i forhold til hvor de blir
    vist i kartet, det som kommer øverst i kartet er det som ligger nederst på
