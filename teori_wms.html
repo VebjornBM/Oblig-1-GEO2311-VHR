@@ -3,19 +3,11 @@
   <meta charset="utf-8">
   <head>
     <title> Dette er teori bak WMS og hvordan det fungerer</title>
-    <style>
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 5px;
-    text-align: left;
-}
-</style>
-  </head>
+
+<link type="text/css" rel="stylesheet" href="teori_wms.css"/>
+</head>
   <body>
-    <h1> WMS teori</h1>
+    <h1>WMS teori</h1>
     <p>WMS er en forkortelse på Web map service. WMS er en internasjonal standard
     som brukes av de fleste nettsteder viser kart. WMS standarden er utviklet av
   Open Geospartial Consortium.</p><!--finn på noe kreativt rundt "web map serive"-->
@@ -25,7 +17,7 @@ th, td {
     Karbildet som som sendes tilbake fra tjeneren er tilsvarende et kartlag .
     Kartlaget som retuneres er ikke de reelle dataene, men en grafisk representasjon av dataene.
  </p>
- <h4>Bruken av WMS</h4>
+ <h3>Bruken av WMS</h3>
  <p>Det finnes en rekke bruksområder på WMS, Her kommer det et par eksempler på dette.
     Om du har en applikasjon for registrering av brønndata i en database, med WMS integrert.
  Vil WMS gjøre slik at du kan ta en visuell sjekk på om posisjonen du ønsker å
@@ -36,47 +28,49 @@ GPS-koordinat</p>
  <p> -  Vi har i hovedsak 3 operasjoner som beskrives igjennom WMS. </p>
  <h3> GetCapabilities </h3>
  <p> Gir oss metadata på informasjon på hva karttjenesten kan tilby.
-   <ul>Som foreksempel:</ul>
+<div id=tabell>
+   <ul>Eksempler på dette er:</ul>
     <li>Tilgjengelig operasjoner</li>
     <li>Karttema </li>
     <li>Kartografiske stiler</li>
     <li>Dekningesområder</li>
     <li>Spørrerestriksjoner</li>
+  </div>
 
-    <table style="width:100%">
+    <table>
     <tr>
       <th>Parametre</th>
       <th>Beskrivelse</th>
       <th>Eksempel</th>
     </tr>
 <tr>
-  <td><mark>SERVICE=(Service type)</mark></td>
-  <td><mark>Type service</mark></td>
-  <td><mark>&SERVICE=WMS</mark></td>
+  <td>SERVICE=(Service type)</td>
+  <td>Type service</td>
+  <td>&SERVICE=WMS</td>
 </tr>
 <tr>
-  <td><mark>REQUEST=(request name)</mark></td>
-  <td><mark>GetMap/GetCapabilities/
-GetFeatureInfo</mark></td>
-<td><mark>GetMap/GetCapabilities/
-GetFeatureInfo</mark></td>
+  <td>REQUEST=(request name)</td>
+  <td>GetMap/GetCapabilities/
+GetFeatureInfo</td>
+<td>GetMap/GetCapabilities/
+GetFeatureInfo</td>
 </tr>
 <tr>
-    <td>VERSION=(Request version)</td>
-      <td>WMS-versjon</td>
-      <td>&VERSION=1.1.1</td>
+    <td><font color="red">VERSION=(Request version)</font></td>
+      <td><font color="red">WMS-versjon</font></td>
+      <td><font color="red">&VERSION=1.1.1</font></td>
 </tr>
 <tr>
-  <td>FORMAT=(MIME_type)</td>
-  <td>Format på resultatkart</td>
-  <td>&FORMAT=text/xml</td>
+  <td><font color="red">FORMAT=(MIME_type)</font></td>
+  <td><font color="red">Format på resultatkart</font></td>
+  <td><font color="red">&FORMAT=text/xml</td></font>
   </tr>
   <tr>
-      <td>UPDATESEQUENCE=(string)</td>
-  <td>Heltall eller tekststreng</td>
+      <td><font color="red">UPDATESEQUENCE=(string)</font></td>
+  <td><font color="red">Heltall eller tekststreng</font></td>
 <td></td>
   </tr>
-    <td colspan="3">Det markerte er obligatorisk, resten er valgfritt.</td>
+    <td colspan="3">Det som rødt er valgfritt,resten er obligatorisk.</td>
   </tr>
 </table>
 <ul>
@@ -104,29 +98,31 @@ GetFeatureInfo</mark></td>
 bildeformatene for GetMap er PNG, JPG, GIF og SVG. I den eurpeiske profilen er
  minumumskravet for formatet, PNG</p>.
 
-  <ul>Eksempler på hva som kan oppgis av forspørsel:</ul>
-   <li>Karttemaliste</li>
-   <li>Koordinatsystem</li>
-   <li>Geografiske områder</li>
-   <li>Bildeformat.</li>
+      <ul>Eksempler på hva som kan oppgis:
+        <div id=tabell>
+        <li>Karttemaliste</li>
+        <li>Koordinatsystem</li>
+        <li>Geografiske områder</li>
+        <li>Bildeformat.</li>
+      </div>
+      </ul>
 
    <p>Kartemaene er avhengig av rekkefølgen i lista i forhold til hvor de blir
    vist i kartet, det som kommer øverst i kartet er det som ligger nederst på
    lista</p>
 
- <table style="width:100%">
+ <table>
 
    <tr>
        <th>Parametre</th>
        <th>Beskrivelse</th>
        <th>Eksempel</th>
-     </tr>
+    </tr>
 
    <tr>
-     <td>VERSION=
-< Request version></td>
-<td>WMS-versjon </td>
-<td>&VERSION=1.3.0</td>
+     <td>VERSION=< Request version></td>
+     <td>WMS-versjon </td>
+     <td>&VERSION=1.3.0</td>
    </tr>
 
    <tr>
@@ -219,8 +215,7 @@ bildeformatene for GetMap er PNG, JPG, GIF og SVG. I den eurpeiske profilen er
    <tr>
      <td><font color="red">ELEVATION=(elevation)</font></td>
      <td><font color="red">Høydedimensjon </font></td>
-     <td><font color="red">&ELEVATION=1000
-</font></td>
+     <td><font color="red">&ELEVATION=1000</font></td>
    </tr>
 
  </tr>
@@ -237,7 +232,7 @@ bildeformatene for GetMap er PNG, JPG, GIF og SVG. I den eurpeiske profilen er
 vil det enkleste være å la tjenermaskinen styre presentasjonen av responsen.</p>
 <P>Minstekravet til den europeiske standarden er formatet HTML.</p>
 
- <table style="width:100%">
+ <table>
 
    <tr>
        <th>Parametre</th>
