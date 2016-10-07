@@ -18,7 +18,12 @@ table, th, td {
 ul{
   text-align: center;
 }
-#tabell {
+#tabell_1 {
+  margin: auto;
+  width: 20%;
+  padding: 10px;
+}
+#tabell_2 {
   margin: auto;
   width: 10%;
   padding: 10px;
