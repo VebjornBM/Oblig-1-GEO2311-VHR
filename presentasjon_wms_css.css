@@ -4,13 +4,14 @@ body {
     width:100%;
 }
 #overskrift {
-  padding: 2px;
-  text-align: center;
   margin:5px;
-  font-size: 21px;
-  color:blue;
+  font-size: 30px;
+  text-shadow: 3px 2px 5px #ff0000;
   font-family: Georgia, serif;
+  text-align: center;
 }
+
+
 /*alt fram til id activ er en del av navigasjonsbaren*/
 ul {
     list-style-type: none;

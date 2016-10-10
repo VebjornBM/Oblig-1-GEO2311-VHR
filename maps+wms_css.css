@@ -20,13 +20,13 @@ body {
   padding: 5px;
 }
 #overskrift {
-  padding: 2px;
-  text-align: center;
   margin:5px;
-  font-size: 21px;
-  color:blue;
+  font-size: 30px;
+  text-shadow: 3px 2px 5px #ff0000;
   font-family: Georgia, serif;
+  text-align: center;
 }
+
 #fakta{
   font-size: 16px;
   margin: 5px;

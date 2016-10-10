@@ -6,12 +6,11 @@ body {
 }
 /* Fra her og fram til #active er til navigasjonsbaren*/
 #overskrift {
-  padding: 2px;
-  text-align: center;
-  margin:5px;
-  font-size: 21px;
-  color:blue;
+  margin:10px;
+  font-size: 40px;
+  text-shadow: 3px 2px 5px #ff0000;
   font-family: Georgia, serif;
+  text-align: center;
 }
 
 ul {

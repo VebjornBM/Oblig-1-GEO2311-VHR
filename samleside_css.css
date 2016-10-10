@@ -5,18 +5,13 @@ body {
 }
 
 #overskrift {
-  padding: 2px;
-  text-align: center;
   margin:5px;
-  font-size: 21px;
-  background-image: -webkit-linear-gradient(right, rgba(52, 54, 55, 1), rgba(142, 142, 142, 1));
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-image: -moz-linear-gradient(right, rgba(52, 54, 55, 1), rgba(142, 142, 142, 1));
--moz-background-clip: text;
--moz-text-fill-color: transparent;
+  font-size: 30px;
+  text-shadow: 3px 2px 5px #ff0000;
   font-family: Georgia, serif;
+  text-align: center;
 }
+
 /*alt til og med id activ er en del av navigasjonsbaren*/
 ul {
     list-style-type: none;
