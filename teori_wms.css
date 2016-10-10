@@ -6,7 +6,8 @@ body {
 }
 /* Fra her og fram til #active er til navigasjonsbaren*/
 #overskrift {
-  margin:5px;
+  padding: 4px;
+  margin-top:5px;
   font-size: 30px;
   text-shadow: 3px 2px 5px #ff0000;
   font-family: Georgia, serif;

@@ -4,6 +4,7 @@ body {
     width:100%;
 }
 #overskrift {
+  padding: 4px;
   margin:5px;
   font-size: 30px;
   text-shadow: 3px 2px 5px #ff0000;

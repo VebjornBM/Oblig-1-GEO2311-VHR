@@ -2,15 +2,15 @@ html, body {
   background: linear-gradient(to bottom right, white, rgba(230, 230, 230, 1));
   margin: 0px;
   height: 100%;
-};
+}
 
 #overskrift {
-  padding: 2px;
-  text-align: center;
+  padding: 4px;
   margin:5px;
-  font-size: 21px;
-  color:blue;
+  font-size: 30px;
+  text-shadow: 3px 2px 5px #ff0000;
   font-family: Georgia, serif;
+  text-align: center;
 }
 /*alt til og med id activ er en del av navigasjonsbaren*/
 ul {
