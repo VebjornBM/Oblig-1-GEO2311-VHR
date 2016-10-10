@@ -3,6 +3,9 @@ html, body {
     height: 100%;
     width:100%;
 }
+p{
+  text-align: center;
+}
 #overskrift {
   padding: 2px;
   text-align: center;
@@ -70,4 +73,20 @@ li a:hover {
 }
 #active{
   background: red;
+}
+#oppgave1{
+  float:left;
+  margin:15px;
+}
+#oppgave2{
+  float:right;
+  margin:15px;
+}
+#oppgave3{
+  float:left;
+  margin;15px;
+}
+#oppgave4{
+  float:right;
+  margin1: 15px;
 }
