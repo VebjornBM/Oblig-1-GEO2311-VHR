@@ -6,8 +6,8 @@ body {
 }
 /* Fra her og fram til #active er til navigasjonsbaren*/
 #overskrift {
-  margin:10px;
-  font-size: 40px;
+  margin:5px;
+  font-size: 30px;
   text-shadow: 3px 2px 5px #ff0000;
   font-family: Georgia, serif;
   text-align: center;
@@ -21,6 +21,7 @@ ul {
     border-style: solid;
     border-width: 0px;
     border-radius: 10px;
+    background: linear-gradient(to right, black, rgba(191, 191, 191, 1));
 
 
 }
