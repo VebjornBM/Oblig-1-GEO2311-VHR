@@ -11,7 +11,7 @@ body {
   color:blue;
   font-family: Georgia, serif;
 }
-
+/*alt fram til id activ er en del av navigasjonsbaren*/
 ul {
     list-style-type: none;
     margin: 2px;
@@ -67,6 +67,7 @@ li a:hover {
 
 #link1 {
   float:right;
+  margin-right:8px;
 }
 #active  {
   background: red;
