@@ -90,7 +90,7 @@ li a:hover {
     font-weight: bold;
 }
 
-#active {
+li #active {
   background: red;
 }
 
