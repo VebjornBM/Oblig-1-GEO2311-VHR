@@ -9,12 +9,7 @@ html, body {
   text-align: center;
   margin:5px;
   font-size: 21px;
-  background-image: -webkit-linear-gradient(right, rgba(52, 54, 55, 1), rgba(142, 142, 142, 1));
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-image: -moz-linear-gradient(right, rgba(52, 54, 55, 1), rgba(142, 142, 142, 1));
--moz-background-clip: text;
--moz-text-fill-color: transparent;
+  color:blue;
   font-family: Georgia, serif;
 }
 /*alt til og med id activ er en del av navigasjonsbaren*/
