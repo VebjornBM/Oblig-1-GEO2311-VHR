@@ -6,16 +6,21 @@
 
 <link type="text/css" rel="stylesheet" href="teori_wms.css"/>
 </head>
+
   <body>
-    <div id=overskrift><h1>Samleside for våre nettsider</h1></div>
+
+  <h1 id="overskrift">WMS teori</h1>
+
+  <div id="tabell_overskrift">
     <ul>
-      <li><a href="maps+wms.html">Oppgave 1</a></li>
-      <li><a id=active href="teori_wms.html">Oppgave 2</a></li>
-      <li><a href="presentasjon_wms.html">Oppgave 3</a></li>
-      <li><a href="projeksjon_web.html">Oppgave 4</a></li>
-      <li id=link1><a href="Samleside.html">Samleside</a></li>
+      <li id="liste"><a href="maps+wms.html">Oppgave 1</a></li>
+      <li id="liste"><a id="active" href="teori_wms.html">Oppgave 2</a></li>
+      <li id="liste"><a href="presentasjon_wms.html">Oppgave 3</a></li>
+      <li id="liste"><a href="projeksjon_web.html">Oppgave 4</a></li>
+      <li id="link1"><a href="Samleside.html">Samleside</a></li>
     </ul>
-    <h1>WMS teori</h1>
+  </div>
+
     <p>WMS er en forkortelse på Web map service. WMS er en internasjonal standard
     som brukes av de fleste nettsteder viser kart. <br>WMS standarden er utviklet av
   Open Geospartial Consortium.</p><!--finn på noe kreativt rundt "web map serive"-->
@@ -41,27 +46,29 @@ GPS-koordinat</p>
 
  <p> Gir oss metadata på informasjon på hva karttjenesten kan tilby.
 
-<div id=tabell_1>
+<div id="tabell_1">
    <ul><b>Eksempler på dette er:</b>
-    <li>Tilgjengelig operasjoner</li>
-    <li>Karttema </li>
-    <li>Kartografiske stiler</li>
-    <li>Dekningesområder</li>
-    <li>Spørrerestriksjoner</li>
+     <li>Tilgjengelig operasjoner</li>
+     <li>Karttema </li>
+     <li>Kartografiske stiler</li>
+     <li>Dekningesområder</li>
+     <li>Spørrerestriksjoner</li>
    </ul>
-  </div>
+</div>
 
-    <table>
-    <tr>
-      <th>Parametre</th>
-      <th>Beskrivelse</th>
-      <th>Eksempel</th>
-    </tr>
+<table>
+<tr>
+   <th>Parametre</th>
+   <th>Beskrivelse</th>
+   <th>Eksempel</th>
+</tr>
+
 <tr>
   <td>SERVICE=(Service type)</td>
   <td>Type service</td>
   <td>&SERVICE=WMS</td>
 </tr>
+
 <tr>
   <td>REQUEST=(request name)</td>
   <td>GetMap/GetCapabilities/
@@ -69,32 +76,48 @@ GetFeatureInfo</td>
 <td>GetMap/GetCapabilities/
 GetFeatureInfo</td>
 </tr>
+
 <tr>
     <td><font color="red">VERSION=(Request version)</font></td>
       <td><font color="red">WMS-versjon</font></td>
       <td><font color="red">&VERSION=1.1.1</font></td>
 </tr>
+
 <tr>
   <td><font color="red">FORMAT=(MIME_type)</font></td>
   <td><font color="red">Format på resultatkart</font></td>
   <td><font color="red">&FORMAT=text/xml</td></font>
   </tr>
-  <tr>
-      <td><font color="red">UPDATESEQUENCE=(string)</font></td>
+
+<tr>
+  <td><font color="red">UPDATESEQUENCE=(string)</font></td>
   <td><font color="red">Heltall eller tekststreng</font></td>
-<td></td>
-  </tr>
-    <td colspan="3">Det som rødt er valgfritt,resten er obligatorisk.</td>
+  <td></td>
+</tr>
+
+<td colspan="3">Det som rødt er valgfritt,resten er obligatorisk.</td>
   </tr>
 </table>
-<ul>
-  <div id=tabell_2>
-  <li><p><b>Service:</b> Er generell serviceinformasjon, kontaktinformasjon,
-    tittel, navn, beskrivelser og restriksjoner.</li></p>
-    <li><p><b>Capabiltiy:</b> Viser hva slags forespørsler som er tilgjengelig og
+
+
+
+<div id="tabell_2">
+  <ul>
+
+    <li>
+      <p><b>Service:</b> Er generell serviceinformasjon, kontaktinformasjon,
+    tittel, navn, beskrivelser og restriksjoner.
+      </p>
+    </li>
+
+    <li>
+      <p><b>Capabiltiy:</b> Viser hva slags forespørsler som er tilgjengelig og
       tilhørende responsformater. <br>Layer elemntet er med på denne.
-    </li></p>
-      <li><p><b>Layer:</b> I karttemastrukturer kan layer heretter kalt tema
+      </p>
+    </li>
+
+    <li>
+      <p><b>Layer:</b> I karttemastrukturer kan layer heretter kalt tema
       omslutte opptil flere underliggende tema. Det kan gjøres på flere nivåer
       der underliggende tema arver noen av egenskapene til det omsluttende tema.
       <p>På grunn av dette kan man be om tema, fra forskjellige områder i
@@ -102,101 +125,99 @@ GetFeatureInfo</td>
       <br>Et layer-element kan inneholde en rekke elementer.
       <br>Fordi de fleste elementene ikke er et krav, er det svært vanskelig
       å basere seg generelt påinformasjonen i capabilities-dokument i en
-      klientapplikasjon.</p></p>
-      </li>
-</ul>
+      klientapplikasjon.
+      </p>
+    </li>
+
+  </ul>
 </div>
+
+
  <h3> GetMap </h3>
 
  <p> GetMap er et kartbilde, eller et kartlag med et eller flere tema. De
     vanligste
 bildeformatene for GetMap<br> er PNG, JPG, GIF og SVG. I den eurpeiske profilen er
  minumumskravet for formatet, PNG</p>.
-      <div id=tabell_1>
-      <ul><b>Eksempler på hva som kan oppgis:</b>
-        <li>Karttemaliste</li>
-        <li>Koordinatsystem</li>
-        <li>Geografiske områder</li>
-        <li>Bildeformat.</li>
-        </ul>
-      </div>
 
+<div id="tabell_3">
 
-   <p>Kartemaene er avhengig av rekkefølgen i lista i forhold til hvor de blir
+  <ul><b>Eksempler på hva som kan oppgis:</b>
+    <li>Karttemaliste</li>
+    <li>Koordinatsystem</li>
+    <li>Geografiske områder</li>
+    <li>Bildeformat.</li>
+  </ul>
+
+</div>
+
+<p>Kartemaene er avhengig av rekkefølgen i lista i forhold til hvor de blir
    vist i kartet, det som kommer øverst i kartet er det som ligger nederst på
-   lista</p>
+   lista
+ </p>
 
- <table>
 
-   <tr>
-       <th>Parametre</th>
-       <th>Beskrivelse</th>
-       <th>Eksempel</th>
-    </tr>
+<table>
 
-   <tr>
-     <td>VERSION=< Request version></td>
-     <td>WMS-versjon </td>
-     <td>&VERSION=1.3.0</td>
-   </tr>
+  <tr>
+     <th>Parametre</th>
+     <th>Beskrivelse</th>
+     <th>Eksempel</th>
+  </tr>
 
-   <tr>
+  <tr>
+    <td>VERSION=< Request version></td>
+    <td>WMS-versjon </td>
+    <td>&VERSION=1.3.0</td>
+  </tr>
+
+  <tr>
     <td>REQUEST=(Request name)</td>
     <td>GetMap -forespørsel </td>
     <td>&REQUEST=GetMap</td>
-   </tr>
+  </tr>
 
-   <tr>
-     <td>LAYERS=(layer_list)</td>
-     <td>Kommaseparert liste over karttema</td>
-     <td>&LAYERS=FjellbronnVannforsy
-     ning,FjellKilde</td>
-   </tr>
+  <tr>
+    <td>LAYERS=(layer_list)</td>
+    <td>Kommaseparert liste over karttema</td>
+    <td>&LAYERS=FjellbronnVannforsyning,FjellKilde</td>
+  </tr>
 
-   <tr>
+  <tr>
     <td>STYLES=(style_list)</td>
-    <td>Hvis tilgjengelig: Liste over stiler som
-     korresponderer med karttemalisten
-     (layers). ("STYLES=" gir default style)
-     </td>
-     <td>&STYLES=1</td>
-     </tr>
+    <td>Hvis tilgjengelig: Liste over stiler som korresponderer med karttemalisten (layers). ("STYLES=" gir default style)</td>
+    <td>&STYLES=1</td>
+  </tr>
 
-   <tr>
-     <td>SRS=(namespace:identfier)</td>
-     <td>Koordinatsystem som gjelder for boxparameteren.
-    Klienter og tjenere må ikke støtte alle koordinatsystem.</td>
-     <td>&SRS=EPSG:32633</td>
-   </tr>
+  <tr>
+    <td>SRS=(namespace:identfier)</td>
+    <td>Koordinatsystem som gjelder for boxparameteren. Klienter og tjenere må ikke støtte alle koordinatsystem.</td>
+    <td>&SRS=EPSG:32633</td>
+  </tr>
 
-   <tr>
-     <td>BBOX=(bounding box)</td>
-     <td>Utstrekningsrektangel i SRS-enheter.
-     Det vil komme feilmelding dersom raten
-     mellom height/width ikke
-     korresponderer med pikslene i BOX.</td>
-     <td>&BBOX=280581.05308146186,69
-     02727.670430477,283107.129745
-     33665,6911610.535459495</td>
-   </tr>
+  <tr>
+    <td>BBOX=(bounding box)</td>
+    <td>Utstrekningsrektangel i SRS-enheter. Det vil komme feilmelding dersom raten mellom height/width ikke korresponderer med pikslene i BOX.</td>
+    <td>&BBOX=280581.05308146186,6902727.670430477,283107.12974533665,6911610.535459495</td>
+  </tr>
 
-   <tr>
-    <td>FORMAT=(output_format)</td>
-    <td>Format på resultatkart </td>
-    <td>&FORMAT=image/png</td>
-   </tr>
+  <tr>
+  <td>FORMAT=(output_format)</td>
+  <td>Format på resultatkart </td>
+  <td>&FORMAT=image/png</td>
+  </tr>
 
-   <tr>
-    <td>WIDTH=(output_width)</td>
-    <td>Bredde i piksler på resultatkart </td>
-    <td>&WIDTH=1014</td>
-   </tr>
+  <tr>
+  <td>WIDTH=(output_width)</td>
+  <td>Bredde i piksler på resultatkart </td>
+  <td>&WIDTH=1014</td>
+  </tr>
 
-   <tr>
-     <td>HEIGHT=(output_height)</td>
-     <td>Høyde i piksler på resultatkart </td>
-      <td>&HEIGHT=611</td>
-   </tr>
+  <tr>
+    <td>HEIGHT=(output_height)</td>
+    <td>Høyde i piksler på resultatkart </td>
+    <td>&HEIGHT=611</td>
+  </tr>
 
    <tr>
      <td><font color="red">TRANSPARENT=(boolean)</font></td>

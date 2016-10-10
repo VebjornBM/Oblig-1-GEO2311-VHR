@@ -22,18 +22,16 @@ ul {
     border-style: solid;
     border-width: 0px;
     border-radius: 10px;
-    background: linear-gradient(to right, black, rgba(191, 191, 191, 1));
 
 
 }
 
-li {
+#liste {
     display: inline;
     float:left;
-
 }
 
-li a {
+#liste a {
   display: block;
     padding: 8px;
     background: white;
@@ -51,8 +49,8 @@ li a {
     font-family: 'Crimson Text', serif;
     font-style: italic;
     font-weight: bold;
-
 }
+
 @keyframes hover1 {
     from {text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
     color:black;}
@@ -72,9 +70,30 @@ li a:hover {
   margin-right:8px;
 }
 
-#active{
+#link1 a {
+  display: block;
+    padding: 8px;
+    background: white;
+    margin-left: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 115px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-decoration: none;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    color:black;
+    font-size: 21px;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#active {
   background: red;
 }
+
 h1, h3, p {
   text-align: center;
 }
@@ -89,6 +108,10 @@ table, th, td {
     border-collapse: collapse;
 }
 
+#tabell_overskrift {
+  background: linear-gradient(to right, black, rgba(191, 191, 191, 1));
+}
+
 #tabell_1 {
   margin: auto;
   width: 20%;
@@ -98,5 +121,11 @@ table, th, td {
 #tabell_2 {
     margin: auto;
     width: 50%;
+    padding: 10px;
+  }
+
+  #tabell_3 {
+    margin: auto;
+    width: 20%;
     padding: 10px;
   }
