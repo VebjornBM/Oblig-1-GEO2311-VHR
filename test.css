@@ -6,11 +6,12 @@ html, body {
     width:100%;
 }
 h1 {
-  text-align: center;
+  position: relative;
   margin:5px;
-  font-size: 250%;
-  font-family: ;
-  color:blue;
+  font-size: 55px;
+  background: -webkit-linear-gradient(pink, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: Georgia, serif;
 }
 
@@ -69,7 +70,19 @@ li a:hover {
 
 #link1 {
   float:right;
+  margin-right: 10px;
 }
 #active  {
   background: red;
+}
+h1:after {
+  content: attr(title);
+  position: absolute;
+  margin:1px;
+  left: 0px;
+    top: 0px;
+    z-index: -1;
+  font-size: 55px;
+  text-shadow: 1px 1px 1px black;
+  font-family: Georgia, serif;
 }
