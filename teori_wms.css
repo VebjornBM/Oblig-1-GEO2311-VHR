@@ -1,10 +1,11 @@
+/*Her bestemmes fargen på siden og avstanden mellom linjene */
 body {
     background: radial-gradient(rgba(182, 186, 186, 0.1), rgba(207, 209, 209, 0.6));
     height: 100%;
     width:100%;
     line-height: 27px;
 }
-/* Fra her og fram til #active er til navigasjonsbaren*/
+/* Fra her og fram til #active er til navigasjonsbaren, med farger og ustseende*/
 #overskrift {
   padding: 4px;
   margin-top:5px;
@@ -93,39 +94,41 @@ li a:hover {
 li #active {
   background: red;
 }
-
+/*Midstiller h1, h3 og p*/
 h1, h3, p {
   text-align: center;
 }
+
 table {
   width: 90%;
   height: 200px;
   margin: 60px;
 }
-
+/* avstand fra "rammene" og farge*/
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
 
-
+/*For å få plassert tabellene uten ramme på midten og hvor bredt teksten skal stå*/
 #tabell_1 {
   margin: auto;
   width: 20%;
   padding: 10px;
 }
-
+/*For å få plassert tabellene uten ramme på midten og hvor bredt teksten skal stå*/
 #tabell_2 {
     margin: auto;
     width: 50%;
     padding: 10px;
 }
-
+/*For å få plassert tabellene uten ramme på midten og hvor bredt teksten skal stå*/
 #tabell_3 {
     margin: auto;
     width: 20%;
     padding: 10px;
 }
+/*Denne er rett og slett til for å avstand etter denne tabellen*/
 #sisteTabell{
   margin-bottom:100px;
 }
