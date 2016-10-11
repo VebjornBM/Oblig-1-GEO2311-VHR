@@ -44,11 +44,10 @@ body {
   float:left;
   padding:2px;
   width: 400px;
-}
-p{
   font size: 10;
   line-height: 25px;/*linjeavstand*/
 }
+
 table, tr, th, th {
   border: 0.5px solid black;
   width: 50%;

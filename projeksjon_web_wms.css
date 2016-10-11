@@ -1,9 +1,10 @@
+/*Gir hele siden farge fra hvit til en gråfarge*/
 body {
   background: linear-gradient(to bottom right, white, rgba(230, 230, 230, 1));
-  margin: 0px;
   height: 100%;
+  width: 100%;
 }
-
+/*Gir overskriften farge og skygge*/
 #overskrift {
   padding: 4px;
   margin:5px;
@@ -12,7 +13,9 @@ body {
   font-family: Georgia, serif;
   text-align: center;
 }
+
 /*alt til og med id activ er en del av navigasjonsbaren*/
+/*Dette gir bakgrunnsfarge til knappene*/
 ul {
     list-style-type: none;
     margin: 2px;
@@ -23,12 +26,12 @@ ul {
     border-radius: 10px;
     background: linear-gradient(to right, black, rgba(191, 191, 191, 1));
 }
-
+/*Legger linkene opp mot hverandre/side ved side*/
 li {
     display: inline;
     float:left;
 }
-
+/*Styler knappene til linkene med farge og ramme. Gir også knappene litt rom fra hverandre*/
 li a {
     display: block;
     padding: 8px;
@@ -48,38 +51,42 @@ li a {
     font-style: italic;
     font-weight: bold;
 }
-
+/* Anngir paramater for en animasajon*/
 @keyframes hover1 {
     from {text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
     color:black;}
     to {color: rgba(150, 0, 0, 0.7);text-shadow: 1px 1px rgba(150, 0, 0, 0.5)}
 }
-
+/*Gjør at knappen som pekeren peker på går fra standardfargen til en rødfarge, hjulpet av koden over */
 li a:hover {
   color: rgba(150, 0, 0, 0.7);
   text-shadow: 1px 1px rgba(130, 0, 0, 0.5);
   animation-name: hover1;
   animation-duration: 0.2s;
 }
-
+/* Flytter "samleside" knappen til høyre og gir litt rom fra høyre kant*/
 #link1 {
   float:right;
   margin-right:8px;
 }
+/* Gir siden/knappen som er aktiv rød bakgrunnsfarge*/
 #active{
   background: red;
 }
+/*Slutt på navbar*/
+
+/* Legger en boks rundt bildene og øker bredden til fullt for å unngå problemer med tekstboksene til hvert bilde*/
 #div1  {
   width: 100%;
   overflow: hidden;
 }
-
+/* Legger venstre bilde til venstre slik at bildet til høyre får legge seg opp til siden av venstre bilde */
 #wms1  {
   margin-left: 10px;
   margin-right: 15px;
   float: left;
 }
-
+/* Gir kartlagene ramme */
 #bilde_wms  {
   border-style: groove;
   border-color: black;
@@ -88,7 +95,7 @@ li a:hover {
   box-shadow: 5px 5px 4px grey;
   margin-top: 20px;
 }
-
+/* Gir teksten innenfor div-en maks bredde og luft ut fra venstre side, og litt overnfor */
 #tekstboks  {
   width: 90%;
   margin-left: 10px;
