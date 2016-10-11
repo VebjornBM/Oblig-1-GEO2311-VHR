@@ -1,61 +1,68 @@
 <DOCTYPE html>
-  <html>
-  <meta charset="utf-8">
+<html>
+
   <head>
     <title> Dette er teori bak WMS og hvordan det fungerer</title>
-
-<link type="text/css" rel="stylesheet" href="teori_wms.css"/>
-</head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="teori_wms.css"/>
+  </head>
 
   <body>
 
-  <div  id="overskrift"><h1>WMS teori</h1></div>
+    <div  id="overskrift"><h1>WMS teori</h1></div>
 
-  <div id="tabell_overskrift">
-    <ul>
-      <li id="liste"><a href="maps+wms.html">Oppgave 1</a></li>
-      <li id="liste"><a id="active" href="teori_wms.html">Oppgave 2</a></li>
-      <li id="liste"><a href="presentasjon_wms.html">Oppgave 3</a></li>
-      <li id="liste"><a href="projeksjon_web.html">Oppgave 4</a></li>
-      <li id="link1"><a href="Samleside.html">Samleside</a></li>
-    </ul>
-  </div>
+    <div id="tabell_overskrift">
+      <ul>
+        <li id="liste"><a href="maps+wms.html">Oppgave 1</a></li>
+        <li id="liste"><a id="active" href="teori_wms.html">Oppgave 2</a></li>
+        <li id="liste"><a href="presentasjon_wms.html">Oppgave 3</a></li>
+        <li id="liste"><a href="projeksjon_web.html">Oppgave 4</a></li>
+        <li id="link1"><a href="Samleside.html">Samleside</a></li>
+      </ul>
+    </div>
 
-  <p>WMS er en forkortelse på Web map service. WMS er en internasjonal standard
+    <p>WMS er en forkortelse på Web map service. WMS er en internasjonal standard
     som brukes av de fleste nettsteder viser kart. <br>WMS standarden er utviklet av
-  Open Geospartial Consortium.</p><!--finn på noe kreativt rundt "web map serive"-->
-  <p><br> WMS er utviklet for å gjøre utveksling av geodata så lett som overhodet mulig.
-    <br>Grovt sett er WMS standarden en beskrivelse av kommunikasjonen mellom en klientapplikasjon og en tjenermaskin.
-    Klienten sender forespørsel til tjeneren, klienten vil da motta et kartbilde eller et xml-dokument.
-    <br>Karbildet som som sendes tilbake fra tjeneren er tilsvarende et kartlag .
-    Kartlaget som retuneres er ikke de reelle dataene, men en grafisk representasjon av dataene.
- </p>
+    Open Geospartial Consortium.
+    </p><!--finn på noe kreativt rundt "web map serive"-->
+    <p><br> WMS er utviklet for å gjøre utveksling av geodata så lett som overhodet mulig.
+      <br>Grovt sett er WMS standarden en beskrivelse av kommunikasjonen mellom en klientapplikasjon og en tjenermaskin.
+      Klienten sender forespørsel til tjeneren, klienten vil da motta et kartbilde eller et xml-dokument.
+      <br>Karbildet som som sendes tilbake fra tjeneren er tilsvarende et kartlag .
+      Kartlaget som retuneres er ikke de reelle dataene, men en grafisk representasjon av dataene.
+    </p>
 
- <h3>Bruken av WMS</h3>
+    <h3>Bruken av WMS</h3>
 
- <p>Det finnes en rekke bruksområder på WMS, her kommer det et par eksempler på dette.
-    Om du har en applikasjon for registrering av brønndata i en database, med WMS integrert.
- <br>Vil WMS gjøre slik at du kan ta en visuell sjekk på om posisjonen du ønsker å
-     legge inn på brønnen et fullgodt alternativ. </p>
- <p>Om man skal bruke PDA, og har WMS med i PDA løsningen. Kan man få en
-enkel og grei funksjonalitet for navigasjon, hvor det hele kan startes fra et
-GPS-koordinat</p>
+      <p>Det finnes en rekke bruksområder på WMS, her kommer det et par eksempler på dette.
+      Om du har en applikasjon for registrering av brønndata i en database, med WMS integrert.
+      <br>Vil WMS gjøre slik at du kan ta en visuell sjekk på om posisjonen du ønsker å
+      legge inn på brønnen et fullgodt alternativ.
+      </p>
+      <p>Om man skal bruke PDA, og har WMS med i PDA løsningen. Kan man få en
+        enkel og grei funksjonalitet for navigasjon, hvor det hele kan startes fra et
+        GPS-koordinat
+      </p>
 
- <p> -  Vi har i hovedsak 3 operasjoner som beskrives igjennom WMS. </p>
- <h3> GetCapabilities </h3>
+      <p> -  Vi har i hovedsak 3 operasjoner som beskrives igjennom WMS.
+      </p>
+    <h3> GetCapabilities </h3>
 
- <p> Gir oss metadata på informasjon på hva karttjenesten kan tilby.
+    <p> Gir oss metadata på informasjon på hva karttjenesten kan tilby.
+    </p>
 
-<div id="tabell_1">
-  <b>Eksempler på dette er:</b>
-     <li>Tilgjengelig operasjoner</li>
-     <li>Karttema </li>
-     <li>Kartografiske stiler</li>
-     <li>Dekningesområder</li>
-     <li>Spørrerestriksjoner</li>
-</div>
+    <div id="tabell_1">
+      <b>Eksempler på dette er:</b>
+      <ul>
+       <li>Tilgjengelig operasjoner</li>
+       <li>Karttema </li>
+       <li>Kartografiske stiler</li>
+       <li>Dekningesområder</li>
+       <li>Spørrerestriksjoner</li>
+     </ul>
+    </div>
 
-<table>
+    <table>
 <tr>
    <th>Parametre</th>
    <th>Beskrivelse</th>
