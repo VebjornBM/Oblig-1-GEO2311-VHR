@@ -119,10 +119,13 @@ table, th, td {
     margin: auto;
     width: 50%;
     padding: 10px;
-  }
+}
 
-  #tabell_3 {
+#tabell_3 {
     margin: auto;
     width: 20%;
     padding: 10px;
-  }
+}
+#sisteTabell{
+  margin-bottom:100px;
+}

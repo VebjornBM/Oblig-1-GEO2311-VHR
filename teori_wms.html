@@ -26,26 +26,26 @@
     </p><!--finn på noe kreativt rundt "web map serive"-->
     <p><br> WMS er utviklet for å gjøre utveksling av geodata så lett som overhodet mulig.
       <br>Grovt sett er WMS standarden en beskrivelse av kommunikasjonen mellom en klientapplikasjon og en tjenermaskin.
-      Klienten sender forespørsel til tjeneren, klienten vil da motta et kartbilde eller et xml-dokument.
-      <br>Karbildet som som sendes tilbake fra tjeneren er tilsvarende et kartlag .
+      <br>Klienten sender forespørsel til tjeneren, klienten vil da motta et kartbilde eller et xml-dokument.
+      <br>Karbildet som som sendes tilbake fra tjeneren er tilsvarende et kartlag.<br>
       Kartlaget som retuneres er ikke de reelle dataene, men en grafisk representasjon av dataene.
     </p>
 
-    <h3>Bruken av WMS</h3>
+    <br><h3>Bruken av WMS</h3>
 
-      <p>Det finnes en rekke bruksområder på WMS, her kommer det et par eksempler på dette.
-      Om du har en applikasjon for registrering av brønndata i en database, med WMS integrert.
-      <br>Vil WMS gjøre slik at du kan ta en visuell sjekk på om posisjonen du ønsker å
-      legge inn på brønnen et fullgodt alternativ.
-      </p>
-      <p>Om man skal bruke PDA, og har WMS med i PDA løsningen. Kan man få en
-        enkel og grei funksjonalitet for navigasjon, hvor det hele kan startes fra et
-        GPS-koordinat
-      </p>
+    <p>Det finnes en rekke bruksområder på WMS, her kommer det et par eksempler på dette.<br>
+    Om du har en applikasjon for registrering av brønndata i en database, med WMS integrert.
+    <br>Vil WMS gjøre slik at du kan ta en visuell sjekk på om posisjonen du ønsker å
+    legge inn på brønnen et fullgodt alternativ.
+    </p>
+    <p>Om man skal bruke PDA, og har WMS med i PDA løsningen. <br>Kan man få en
+    enkel og grei funksjonalitet for navigasjon, hvor det hele kan startes fra et
+    GPS-koordinat
+    </p>
 
-      <p> -  Vi har i hovedsak 3 operasjoner som beskrives igjennom WMS.
-      </p>
-    <h3> GetCapabilities </h3>
+    <p> -  Vi har i hovedsak 3 operasjoner som beskrives igjennom WMS.
+    </p>
+    <br><h3> GetCapabilities </h3>
 
     <p> Gir oss metadata på informasjon på hva karttjenesten kan tilby.
     </p>
@@ -62,292 +62,291 @@
     </div>
 
     <table>
-<tr>
-   <th>Parametre</th>
-   <th>Beskrivelse</th>
-   <th>Eksempel</th>
-</tr>
+      <tr>
+       <th>Parametre</th>
+       <th>Beskrivelse</th>
+       <th>Eksempel</th>
+      </tr>
 
-<tr>
-  <td>SERVICE=(Service type)</td>
-  <td>Type service</td>
-  <td>&SERVICE=WMS</td>
-</tr>
+      <tr>
+        <td>SERVICE=(Service type)</td>
+        <td>Type service</td>
+        <td>&SERVICE=WMS</td>
+      </tr>
 
-<tr>
-  <td>REQUEST=(request name)</td>
-  <td>GetMap/GetCapabilities/
-GetFeatureInfo</td>
-<td>GetMap/GetCapabilities/
-GetFeatureInfo</td>
-</tr>
+      <tr>
+        <td>REQUEST=(request name)</td>
+        <td>GetMap/GetCapabilities/
+        GetFeatureInfo</td>
+        <td>GetMap/GetCapabilities/
+        GetFeatureInfo</td>
+      </tr>
 
-<tr>
-    <td><font color="red">VERSION=(Request version)</font></td>
-      <td><font color="red">WMS-versjon</font></td>
-      <td><font color="red">&VERSION=1.1.1</font></td>
-</tr>
+      <tr>
+        <td><font color="red">VERSION=(Request version)</font></td>
+        <td><font color="red">WMS-versjon</font></td>
+        <td><font color="red">&VERSION=1.1.1</font></td>
+      </tr>
 
-<tr>
-  <td><font color="red">FORMAT=(MIME_type)</font></td>
-  <td><font color="red">Format på resultatkart</font></td>
-  <td><font color="red">&FORMAT=text/xml</td></font>
-  </tr>
+      <tr>
+        <td><font color="red">FORMAT=(MIME_type)</font></td>
+        <td><font color="red">Format på resultatkart</font></td>
+        <td><font color="red">&FORMAT=text/xml</td></font>
+      </tr>
 
-<tr>
-  <td><font color="red">UPDATESEQUENCE=(string)</font></td>
-  <td><font color="red">Heltall eller tekststreng</font></td>
-  <td></td>
-</tr>
-
-<td colspan="3">Det som rødt er valgfritt,resten er obligatorisk.</td>
-  </tr>
-</table>
-
-
-
-<div id="tabell_2">
-  <ul>
-
-    <li>
-      <p><b>Service:</b> Er generell serviceinformasjon, kontaktinformasjon,
-    tittel, navn, beskrivelser og restriksjoner.
-      </p>
-    </li>
-
-    <li>
-      <p><b>Capabiltiy:</b> Viser hva slags forespørsler som er tilgjengelig og
-      tilhørende responsformater. <br>Layer elemntet er med på denne.
-      </p>
-    </li>
-
-    <li>
-      <p><b>Layer:</b> I karttemastrukturer kan layer heretter kalt tema
-      omslutte opptil flere underliggende tema. Det kan gjøres på flere nivåer
-      der underliggende tema arver noen av egenskapene til det omsluttende tema.
-      <p>På grunn av dette kan man be om tema, fra forskjellige områder i
-      temahierarkiet, ved å utføre forespørsler.
-      <br>Et layer-element kan inneholde en rekke elementer.
-      <br>Fordi de fleste elementene ikke er et krav, er det svært vanskelig
-      å basere seg generelt påinformasjonen i capabilities-dokument i en
-      klientapplikasjon.
-      </p>
-    </li>
-
-  </ul>
-</div>
+      <tr>
+        <td><font color="red">UPDATESEQUENCE=(string)</font></td>
+        <td><font color="red">Heltall eller tekststreng</font></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="3">Det som rødt er valgfritt,resten er obligatorisk.</td>
+      </tr>
+    </table>
 
 
- <h3> GetMap </h3>
 
- <p> GetMap er et kartbilde, eller et kartlag med et eller flere tema. De
-    vanligste
-bildeformatene for GetMap<br> er PNG, JPG, GIF og SVG. I den eurpeiske profilen er
- minumumskravet for formatet, PNG</p>.
+    <div id="tabell_2">
+      <ul>
 
-<div id="tabell_3">
+        <li>
+        <p><b>Service:</b> Er generell serviceinformasjon, kontaktinformasjon,
+        tittel, navn, beskrivelser og restriksjoner.
+        </p>
+        </li>
 
-  <b>Eksempler på hva som kan oppgis:</b>
-    <li>Karttemaliste</li>
-    <li>Koordinatsystem</li>
-    <li>Geografiske områder</li>
-    <li>Bildeformat.</li>
+        <li>
+        <p><b>Capabiltiy:</b> Viser hva slags forespørsler som er tilgjengelig og
+        tilhørende responsformater. <br>Layer elemntet er med på denne.
+        </p>
+        </li>
+
+        <li>
+        <p><b>Layer:</b> I karttemastrukturer kan layer heretter kalt tema
+        omslutte opptil flere underliggende tema. Det kan gjøres på flere nivåer
+        der underliggende tema arver noen av egenskapene til det omsluttende tema.
+        <p>På grunn av dette kan man be om tema, fra forskjellige områder i
+        temahierarkiet, ved å utføre forespørsler.
+        <br>Et layer-element kan inneholde en rekke elementer.
+        <br>Fordi de fleste elementene ikke er et krav, er det svært vanskelig
+        å basere seg generelt påinformasjonen i capabilities-dokument i en
+        klientapplikasjon.
+        </p>
+        </li>
+
+    </ul>
+    </div>
 
 
-</div>
+    <br><h3> GetMap </h3>
 
-<p>Kartemaene er avhengig av rekkefølgen i lista i forhold til hvor de blir
-   vist i kartet, det som kommer øverst i kartet er det som ligger nederst på
-   lista
- </p>
+     <p> GetMap er et kartbilde, eller et kartlag med et eller flere tema. De
+      vanligste
+      bildeformatene for GetMap<br> er PNG, JPG, GIF og SVG. I den eurpeiske profilen er
+      minumumskravet for formatet, PNG</p>.
+
+    <div id="tabell_3">
+
+    <b>Eksempler på hva som kan oppgis:</b>
+    <ul>
+      <li>Karttemaliste</li>
+      <li>Koordinatsystem</li>
+      <li>Geografiske områder</li>
+      <li>Bildeformat.</li>
+    </ul>
+
+    </div>
+
+    <p>Kartemaene er avhengig av rekkefølgen i lista i forhold til hvor de blir
+     vist i kartet,<br> det som kommer øverst i kartet er det som ligger nederst på lista
+    </p>
 
 
-<table>
+    <table>
 
-  <tr>
+    <tr>
      <th>Parametre</th>
      <th>Beskrivelse</th>
      <th>Eksempel</th>
-  </tr>
+    </tr>
 
-  <tr>
-    <td>VERSION=< Request version></td>
-    <td>WMS-versjon </td>
-    <td>&VERSION=1.3.0</td>
-  </tr>
+    <tr>
+      <td>VERSION=< Request version></td>
+      <td>WMS-versjon </td>
+      <td>&VERSION=1.3.0</td>
+    </tr>
 
-  <tr>
-    <td>REQUEST=(Request name)</td>
-    <td>GetMap -forespørsel </td>
-    <td>&REQUEST=GetMap</td>
-  </tr>
+    <tr>
+      <td>REQUEST=(Request name)</td>
+      <td>GetMap -forespørsel </td>
+      <td>&REQUEST=GetMap</td>
+    </tr>
 
-  <tr>
-    <td>LAYERS=(layer_list)</td>
-    <td>Kommaseparert liste over karttema</td>
-    <td>&LAYERS=FjellbronnVannforsyning,FjellKilde</td>
-  </tr>
+    <tr>
+      <td>LAYERS=(layer_list)</td>
+      <td>Kommaseparert liste over karttema</td>
+      <td>&LAYERS=FjellbronnVannforsyning,FjellKilde</td>
+    </tr>
 
-  <tr>
-    <td>STYLES=(style_list)</td>
-    <td>Hvis tilgjengelig: Liste over stiler som korresponderer med karttemalisten (layers). ("STYLES=" gir default style)</td>
-    <td>&STYLES=1</td>
-  </tr>
+    <tr>
+      <td>STYLES=(style_list)</td>
+      <td>Hvis tilgjengelig: Liste over stiler som korresponderer med karttemalisten (layers). ("STYLES=" gir default style)</td>
+      <td>&STYLES=1</td>
+    </tr>
 
-  <tr>
-    <td>SRS=(namespace:identfier)</td>
-    <td>Koordinatsystem som gjelder for boxparameteren. Klienter og tjenere må ikke støtte alle koordinatsystem.</td>
-    <td>&SRS=EPSG:32633</td>
-  </tr>
+    <tr>
+      <td>SRS=(namespace:identfier)</td>
+      <td>Koordinatsystem som gjelder for boxparameteren. Klienter og tjenere må ikke støtte alle koordinatsystem.</td>
+      <td>&SRS=EPSG:32633</td>
+    </tr>
 
-  <tr>
-    <td>BBOX=(bounding box)</td>
-    <td>Utstrekningsrektangel i SRS-enheter. Det vil komme feilmelding dersom raten mellom height/width ikke korresponderer med pikslene i BOX.</td>
-    <td>&BBOX=280581.05308146186,6902727.670430477,283107.12974533665,6911610.535459495</td>
-  </tr>
+    <tr>
+      <td>BBOX=(bounding box)</td>
+      <td>Utstrekningsrektangel i SRS-enheter. Det vil komme feilmelding dersom raten mellom height/width ikke korresponderer med pikslene i BOX.</td>
+      <td>&BBOX=280581.05308146186,6902727.670430477,283107.12974533665,6911610.535459495</td>
+    </tr>
 
-  <tr>
-  <td>FORMAT=(output_format)</td>
-  <td>Format på resultatkart </td>
-  <td>&FORMAT=image/png</td>
-  </tr>
+    <tr>
+      <td>FORMAT=(output_format)</td>
+      <td>Format på resultatkart </td>
+      <td>&FORMAT=image/png</td>
+    </tr>
 
-  <tr>
-  <td>WIDTH=(output_width)</td>
-  <td>Bredde i piksler på resultatkart </td>
-  <td>&WIDTH=1014</td>
-  </tr>
+    <tr>
+      <td>WIDTH=(output_width)</td>
+      <td>Bredde i piksler på resultatkart </td>
+      <td>&WIDTH=1014</td>
+    </tr>
 
-  <tr>
-    <td>HEIGHT=(output_height)</td>
-    <td>Høyde i piksler på resultatkart </td>
-    <td>&HEIGHT=611</td>
-  </tr>
+    <tr>
+      <td>HEIGHT=(output_height)</td>
+      <td>Høyde i piksler på resultatkart </td>
+      <td>&HEIGHT=611</td>
+    </tr>
 
-   <tr>
+    <tr>
      <td><font color="red">TRANSPARENT=(boolean)</font></td>
      <td><font color="red">(defalt = false)</font></td>
-     <td><font color="red">&TRANSPARENT=true
-</font></td>
-   </tr>
+     <td><font color="red">&TRANSPARENT=true</font></td>
+    </tr>
 
-   <tr>
-     <td><font color="red">EXEPTIONS=
-(exception_format)</font></td>
-     <td><font color="red">Format på feilmeldinger</font></td>
-     <td><font color="red">&EXEPTIONS=application/vnd.ogc
-.se_inimagel</font></td>
-   </tr>
+    <tr>
+      <td><font color="red">EXEPTIONS=(exception_format)</font></td>
+      <td><font color="red">Format på feilmeldinger</font></td>
+      <td><font color="red">&EXEPTIONS=application/vnd.ogc.se_inimagel</font></td>
+    </tr>
 
-   <tr>
-     <td><font color="red">BGCOLOR=(color_value)</font></td>
-     <td><font color="red">Hexadesimal RGB fargeverdi
-(default:#FFFFFF)
-</font></td>
-     <td><font color="red">&BGCOLOR=#ffffff</font></td>
-   </tr>
+    <tr>
+      <td><font color="red">BGCOLOR=(color_value)</font></td>
+      <td><font color="red">Hexadesimal RGB fargeverdi(default:#FFFFFF)</font></td>
+      <td><font color="red">&BGCOLOR=#ffffff</font></td>
+    </tr>
 
-   <tr>
-     <td><font color="red">TIME=(time)</font></td>
-     <td><font color="red">Tidsdimensjon</font></td>
-     <td><font color="red">&TIME=2000-08-03</font></td>
-   </tr>
+    <tr>
+      <td><font color="red">TIME=(time)</font></td>
+      <td><font color="red">Tidsdimensjon</font></td>
+      <td><font color="red">&TIME=2000-08-03</font></td>
+    </tr>
 
-   <tr>
-     <td><font color="red">ELEVATION=(elevation)</font></td>
-     <td><font color="red">Høydedimensjon </font></td>
-     <td><font color="red">&ELEVATION=1000</font></td>
-   </tr>
+    <tr>
+      <td><font color="red">ELEVATION=(elevation)</font></td>
+      <td><font color="red">Høydedimensjon </font></td>
+      <td><font color="red">&ELEVATION=1000</font></td>
+    </tr>
 
- </tr>
-   <td colspan="3">Det som rødt er valgfritt,resten er obligatorisk.</td>
- </tr>
-</table>
+    <tr>
+      <td colspan="3">Det som rødt er valgfritt,resten er obligatorisk.</td>
+    </tr>
+  </table>
 
- <h3>GetFeatureInfo</h3>
+  <br><h3>GetFeatureInfo</h3>
 
- <p>GetFeatureInfo er egenskapsinformasjon for et eller flere tema som HTML/XML
- dokumenter.
- GetFeatureInfo er valgfri i standarden.</p>
- <p>Fordi tjenestetilbyderen kan definere responsen etter eget ønske,
-  vil det enkleste være å la tjenermaskinen styre presentasjonen av responsen.</p>
- <P>Minstekravet til den europeiske standarden er formatet HTML.</p>
+  <p>GetFeatureInfo er egenskapsinformasjon for et eller flere tema som HTML/XML
+   dokumenter.
+   GetFeatureInfo er valgfri i standarden.</p>
+   <p>Fordi tjenestetilbyderen kan definere responsen etter eget ønske,
+    vil det enkleste være å la tjenermaskinen styre presentasjonen av responsen.</p>
+   <P>Minstekravet til den europeiske standarden er formatet HTML.</p>
 
- <table>
+  <div id=sisteTabell>
+  <table>
 
-   <tr>
-       <th>Parametre</th>
-       <th>Beskrivelse</th>
-       <th>Eksempel</th>
-     </tr>
+    <tr>
+      <th>Parametre</th>
+      <th>Beskrivelse</th>
+      <th>Eksempel</th>
+    </tr>
 
-  <tr>
-    <td>VERSION=(Request version)</td>
-    <td>WMS-versjon </td>
-    <td>&VERSION=1.3.0</td>
-  </tr>
+    <tr>
+      <td>VERSION=(Request version)</td>
+      <td>WMS-versjon </td>
+      <td>&VERSION=1.3.0</td>
+    </tr>
 
-  <tr>
-   <td>VERSION=(Request version)</td>
-   <td>WMS-versjon </td>
-   <td>&VERSION=1.3.0</td>
-  </tr>
+    <tr>
+      <td>VERSION=(Request version)</td>
+      <td>WMS-versjon </td>
+      <td>&VERSION=1.3.0</td>
+    </tr>
 
-  <tr>
-   <td>REQUEST=(Request name)</td>
-   <td>GetFeatureInfo-forespørsel</td>
-   <td>&REQUEST=GetFeatureInfo</td>
-  </tr>
+    <tr>
+      <td>REQUEST=(Request name)</td>
+      <td>GetFeatureInfo-forespørsel</td>
+      <td>&REQUEST=GetFeatureInfo</td>
+    </tr>
 
-  <tr>
-   <td>REQUEST=(Request name)</td>
-   <td>GetFeatureInfo-forespørsel</td>
-   <td>&REQUEST=GetFeatureInfo</td>
-  </tr>
+    <tr>
+      <td>REQUEST=(Request name)</td>
+      <td>GetFeatureInfo-forespørsel</td>
+      <td>&REQUEST=GetFeatureInfo</td>
+    </tr>
 
-  <tr>
-   <td>QUERY_LAYERS=(Layer_lis)</td>
-   <td>Kommaseparert liste over karttema</td>
-   <td>&QUERY_LAYERS=FjellbronnVan
-     nforsyning,FjellKilde</td>
-  </tr>
+    <tr>
+      <td>QUERY_LAYERS=(Layer_lis)</td>
+      <td>Kommaseparert liste over karttema</td>
+      <td>&QUERY_LAYERS=FjellbronnVannforsyning,FjellKilde</td>
+    </tr>
 
-  <tr>
-   <td>INFO_FORMAT=(output_format)</td>
-   <td>Format på responsdokument</td>
-   <td>&INFO_FORMAT=text/html</td>
-  </tr>
+    <tr>
+      <td>INFO_FORMAT=(output_format)</td>
+      <td>Format på responsdokument</td>
+      <td>&INFO_FORMAT=text/html</td>
+    </tr>
 
-  <tr>
-   <td>X=(pixel_column) </td>
-   <td>X-koordinat i piksler for museklikk i
-   bildekoordinater.</td>
-   <td>&X=183</td>
-  </tr>
+    <tr>
+      <td>X=(pixel_column) </td>
+      <td>X-koordinat i piksler for museklikk i bildekoordinater.</td>
+      <td>&X=183</td>
+    </tr>
 
-  <tr>
-   <td>Y=(pixel_row></td>
-   <td>Y-koordinat i piksler for museklikk i
-   bildekoordinater</td>
-   <td>&Y=126</td>
-  </tr>
+    <tr>
+      <td>Y=(pixel_row></td>
+      <td>Y-koordinat i piksler for museklikk i bildekoordinater</td>
+      <td>&Y=126</td>
+    </tr>
 
-  <tr>
-    <td><font color="red">FEATURE_COUNT=(number)</font></td>
-    <td><font color="red">Maksimalt antall objekter som det skal
-    returneres info om.</font></td>
-    <td><font color="red">&FEATURE_COUNT=10</font></td>
-  </tr>
+    <tr>
+      <td><font color="red">FEATURE_COUNT=(number)</font></td>
+      <td><font color="red">Maksimalt antall objekter som det skal
+      returneres info om.</font></td>
+      <td><font color="red">&FEATURE_COUNT=10</font></td>
+    </tr>
 
-  <tr>
-    <td><font color="red">EXEPTIONS=(exception_format)</font></td>
-    <td><font color="red">Format på feilmeldinger</font></td>
-    <td><font color="red">Format på feilmeldinger</font></td>
-  </tr>
+    <tr>
+      <td><font color="red">EXEPTIONS=(exception_format)</font></td>
+      <td><font color="red">Format på feilmeldinger</font></td>
+      <td><font color="red">Format på feilmeldinger</font></td>
+    </tr>
 
-</tr>
-  <td colspan="3">Det som rødt er valgfritt, resten er obligatorisk.
-    <b>Her ser man også at noen av de obligatoriske GetMap-parameterne.
-     </b></td>
-</tr>
-</table>
+    <tr>
+      <td colspan="3">Det som rødt er valgfritt, resten er obligatorisk.
+      <b>Her ser man også at noen av de obligatoriske GetMap-parameterne.
+      </b></td>
+    </tr>
+  </table>
+  </div>
+  <div class="unødvendig">
+    <!--denne div'en er her kun få å få luft nederst på siden-->
+  </div>
+</body>
+</html>
