@@ -14,7 +14,7 @@ body {
   font-family: Georgia, serif;
   text-align: center;
 }
-
+/*Dette gir bakgrunnsfarge til knappene*/
 #navbarBack {
     list-style-type: none;
     margin: 2px;
@@ -26,12 +26,12 @@ body {
     background: linear-gradient(to right, black, rgba(191, 191, 191, 1));
 }
 
-
+/*Legger linkene opp mot hverandre/side ved side*/
 #liste {
     display: inline;
     float:left;
 }
-
+/*Styler knappene til linkene med farge og ramme. Gir også knappene litt rom fra hverandre*/
 #liste a {
   display: block;
     padding: 8px;
@@ -51,13 +51,13 @@ body {
     font-style: italic;
     font-weight: bold;
 }
-
+/* Anngir paramater for en animasajon*/
 @keyframes hover1 {
     from {text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
     color:black;}
     to {color: rgba(150, 0, 0, 0.7);text-shadow: 1px 1px rgba(150, 0, 0, 0.5)}
 }
-
+/*Gjør at knappen som pekeren peker på går fra standardfargen til en rødfarge, hjulpet av koden over */
 li a:hover {
   color: rgba(150, 0, 0, 0.7);
   text-shadow: 1px 1px rgba(130, 0, 0, 0.5);
@@ -65,11 +65,12 @@ li a:hover {
   animation-duration: 0.2s;
 
 }
-
+/* Flytter "samleside" knappen til høyre og gir litt rom fra høyre kant*/
 #link1 {
   float:right;
   margin-right:8px;
 }
+/*Styler knappene til linken "samleside" med farge og ramme. Gir også knappe litt rom fra hverandre*/
 
 #link1 a {
   display: block;
@@ -90,7 +91,7 @@ li a:hover {
     font-style: italic;
     font-weight: bold;
 }
-
+/* Gir siden/knappen som er aktiv rød bakgrunnsfarge*/
 li #active {
   background: red;
 }

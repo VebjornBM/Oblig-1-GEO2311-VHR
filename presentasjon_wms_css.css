@@ -16,6 +16,7 @@ body {
 
 
 /*alt fram til id activ er en del av navigasjonsbaren*/
+/*Dette gir bakgrunnsfarge til knappene*/
 ul {
     list-style-type: none;
     margin: 2px;
@@ -26,13 +27,13 @@ ul {
     border-radius: 10px;
     background: linear-gradient(to right, black, rgba(191, 191, 191, 1));
 }
-
+/*Legger linkene opp mot hverandre/side ved side*/
 li {
     display: inline;
     float:left;
 
 }
-
+/*Styler knappene til linkene med farge og ramme. Gir også knappene litt rom fra hverandre*/
 li a {
   display: block;
     padding: 8px;
@@ -53,12 +54,13 @@ li a {
     font-weight: bold;
 
 }
+/* Anngir paramater for en animasajon*/
 @keyframes hover1 {
     from {text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
     color:black;}
     to {color: rgba(150, 0, 0, 0.7);text-shadow: 1px 1px rgba(150, 0, 0, 0.5)}
 }
-
+/*Gjør at knappen som pekeren peker på går fra standardfargen til en rødfarge, hjulpet av koden over */
 li a:hover {
   color: rgba(150, 0, 0, 0.7);
   text-shadow: 1px 1px rgba(130, 0, 0, 0.5);
@@ -66,11 +68,12 @@ li a:hover {
   animation-duration: 0.2s;
 
 }
-
+/* Flytter "samleside" knappen til høyre og gir litt rom fra høyre kant*/
 #link1 {
   float:right;
   margin-right:8px;
 }
+/* Gir siden/knappen som er aktiv rød bakgrunnsfarge*/
 #active  {
   background: red;
 }
