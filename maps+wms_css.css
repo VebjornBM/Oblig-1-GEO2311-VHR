@@ -8,16 +8,23 @@ body {
   width:400px;
   height:350px;
   float:left;
+  margin-left: 10%;
   margin-bottom:5px;
-  margin-top: 5px;
-  padding: 5px;
+  margin-top: 25px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 2px 2px 4px grey;
+  /*i box-shadow er den første pixel benevningen står for horisontal skyggen,
+   mens den andre står for vertikal skyggen, den siste er hvor mye tettheten skal minke/hvor mye den sprer seg ut */
 }
 #wmsKart {
   float:left;
-  margin-left: 5px;
+  margin-left: 10%;
   margin-bottom:5px;
-  margin-top: 5px;
-  padding: 5px;
+  margin-top: 25px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 2px 2px 4px grey;
 }
 #overskrift {
   padding: 4px;
@@ -30,14 +37,17 @@ body {
 
 #fakta{
   font-size: 16px;
-  margin: 5px;
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 8px;
+  margin-bottom:20px;
   float:left;
   padding:2px;
   width: 400px;
 }
 p{
   font size: 10;
-  line-height: 25px;
+  line-height: 25px;/*linjeavstand*/
 }
 table, tr, th, th {
   border: 0.5px solid black;
@@ -50,6 +60,10 @@ table, tr, th, th {
     margin: 5px;
     float:left;
     width: 400px;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 8px;
+    margin-bottom: 100px;
   }
 /*alt fram til id activ er en del av navigasjonsbaren*/
 ul {
