@@ -90,5 +90,11 @@ li a:hover {
   border-radius: 8px;
   border-width: 2px;
   box-shadow: 5px 5px 4px grey;
+}
 
+
+#tekstboks  {
+  width: 90%;
+  margin-left: 10px;
+  padding: 20px;
 }

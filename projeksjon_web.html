@@ -29,26 +29,24 @@
       <h3>EPSG:4258 N50 Høydekurver</h3>
     </div>
   </div>
-  <p>
-  Vi har tatt med kartlaget N50 høydekurver fra WMS tjenesten «Topgrafisk norgeskart 2) med EPSG kodene 32633 og 4258.
-  På WMS-bildene kan vi se at vi er på samme område, men kartlagene er likevel litt ulike i form og størrelse.
-  Projeksjonene i kartlagene er ulike og vi får et ulikt bilde på det geografiske området. Da blir også informasjon du henter ulik og kan få følger for eventuelt etterarbeid av informasjonen.
-  <br><br>Koden 32633 står for WGS84 / UTM sone 33 (World Geodetic System) og er globalt geodetisk referansesystem.
-  Koden 4258 står for EUREF89 eller internasjonalt ETRS89 (European Terrestrial Reference System 89) og er det offisielle geodetiske datumet i Norge.
-  <br><br>Disse to EPSG kodene er hyppig brukt i Norge i webkart løsninger. Av disse er 32633 mest brukt i WMS-tjenesten Topografisk norgeskart 2.
-  Koden 4258 er også brukt men mest i FKB kartlag, der kommune forvalter mye av dataen etter FKB standarden som har EUREF89 som offisielle referansesystem.
-  <br><br>Når vi jobber med ulike projeksjoner jobber vi også med ulike egenskaper. Disse kan påvirke resultatene vi får ved å jobbe med ulike projeksjoner.
-  Det kan for eksempel bli problemer hvis en familie skal ut på tur og henter diverse kartlag i ulike projeksjoner.
-  I noen projeksjoner kan det være vanskelig å stake ut kursen hvis projeksjonen ikke gjør at kompassretningene blir rette.
-  <br><br>Noen karttjenester (som google maps, bing maps og andre) bruker projeksjonen kalt Web Mercator. Denne projeksjonen bruker en jordisk ellipsoide modell basert på ellipsoide modellen fra WGS84.
-  Da får projeksjonen en rundere form som også forenkler utregning. Punktene blir derimot ikke transformert riktig mellom disse projeksjonene.
-  Det gjør at projeksjonen passer dårlig til måling av lengde og areal.
-  <br><br>Når vi ser på de to EPSG kodene vi bruker i de to kartlagene har vi WGS84 og EUREF89. Disse to har litt ulik bruk fra hverandre.
-  WGS84 brukes ofte til GPS mens EUREF89 er anbefalt til kartlegging og måling i Europa. Projeksjonen WGS84 passer dårligere til måling i Europa forhold til EUREF89 grunnet projeksjonen er bygd for hele verden mens EUREF er bygd til Europa.
-  EUREF er låst til den eurasiske kontinentalplaten noe som gir den en fordel over WGS84 da punktene innenfor Europa ikke vil bevege seg like mye som de ulike kontinentalplatene på jorden.
-
-
-
-  </p>
+  <div id=tekstboks>
+    <p> Vi har tatt med kartlaget N50 høydekurver fra WMS tjenesten «Topgrafisk norgeskart 2) med EPSG kodene 32633 og 4258.
+    På WMS-bildene kan vi se at vi er på samme område, men kartlagene er likevel litt ulike i form og størrelse.
+    Projeksjonene i kartlagene er ulike og vi får et ulikt bilde på det geografiske området. Da blir også informasjon du henter ulik og kan få følger for eventuelt etterarbeid av informasjonen.
+    <br><br>Koden 32633 står for WGS84 / UTM sone 33 (World Geodetic System) og er globalt geodetisk referansesystem.
+    Koden 4258 står for EUREF89 eller internasjonalt ETRS89 (European Terrestrial Reference System 89) og er det offisielle geodetiske datumet i Norge.
+    <br><br>Disse to EPSG kodene er hyppig brukt i Norge i webkart løsninger. Av disse er 32633 mest brukt i WMS-tjenesten Topografisk norgeskart 2.
+    Koden 4258 er også brukt men mest i FKB kartlag, der kommune forvalter mye av dataen etter FKB standarden som har EUREF89 som offisielle referansesystem.
+    <br><br>Når vi jobber med ulike projeksjoner jobber vi også med ulike egenskaper. Disse kan påvirke resultatene vi får ved å jobbe med ulike projeksjoner.
+    Det kan for eksempel bli problemer hvis en familie skal ut på tur og henter diverse kartlag i ulike projeksjoner.
+    I noen projeksjoner kan det være vanskelig å stake ut kursen hvis projeksjonen ikke gjør at kompassretningene blir rette.
+    <br><br>Noen karttjenester (som google maps, bing maps og andre) bruker projeksjonen kalt Web Mercator. Denne projeksjonen bruker en jordisk ellipsoide modell basert på ellipsoide modellen fra WGS84.
+    Da får projeksjonen en rundere form som også forenkler utregning. Punktene blir derimot ikke transformert riktig mellom disse projeksjonene.
+    Det gjør at projeksjonen passer dårlig til måling av lengde og areal.
+    <br><br>Når vi ser på de to EPSG kodene vi bruker i de to kartlagene har vi WGS84 og EUREF89. Disse to har litt ulik bruk fra hverandre.
+    WGS84 brukes ofte til GPS mens EUREF89 er anbefalt til kartlegging og måling i Europa. Projeksjonen WGS84 passer dårligere til måling i Europa forhold til EUREF89 grunnet projeksjonen er bygd for hele verden mens EUREF er bygd til Europa.
+    EUREF er låst til den eurasiske kontinentalplaten noe som gir den en fordel over WGS84 da punktene innenfor Europa ikke vil bevege seg like mye som de ulike kontinentalplatene på jorden.
+    </p>
+  </div>
   </body>
 </html>
