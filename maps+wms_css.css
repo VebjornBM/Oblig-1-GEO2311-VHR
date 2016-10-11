@@ -1,9 +1,10 @@
+/*Gir en grå bakgrunnfarge som blir hvitere i en sirkel mot midten. denne går på hele bakgrunnen*/
 body {
   background: radial-gradient(rgba(182, 186, 186, 0.1), rgba(207, 209, 209, 0.6));
   height: 100%;
   width: 100%;
 }
-
+/*Gir størrelse og plassering av googlemaps kartet med en kant*/
 #googleMaps {
   width:400px;
   height:350px;
@@ -17,6 +18,7 @@ body {
   /*i box-shadow er den første pixel benevningen står for horisontal skyggen,
    mens den andre står for vertikal skyggen, den siste er hvor mye tettheten skal minke/hvor mye den sprer seg ut */
 }
+/*Gir plassering og størrelse på wmskartet samt en kant med skygge*/
 #wmsKart {
   float:left;
   margin-left: 10%;
@@ -26,6 +28,7 @@ body {
   border-width: 1px;
   box-shadow: 2px 2px 4px grey;
 }
+/*Angir skrifttype, skriftstørrelse og skygge på teksten, plassering, luft mellom overskriften og toppen på siden samt navigasjonsbaren*/
 #overskrift {
   padding: 4px;
   margin:5px;
@@ -34,7 +37,7 @@ body {
   font-family: Georgia, serif;
   text-align: center;
 }
-
+/*gir plassering, skriftstørrelse, luft mellom teksten og resten av boksene. dette er for <p>*/
 #fakta{
   font-size: 16px;
   margin-top: 20px;
@@ -44,11 +47,10 @@ body {
   float:left;
   padding:2px;
   width: 400px;
-}
-p{
-  font size: 10;
   line-height: 25px;/*linjeavstand*/
 }
+
+
 table, tr, th, th {
   border: 0.5px solid black;
   width: 50%;
